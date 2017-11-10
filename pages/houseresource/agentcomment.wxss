@@ -1,0 +1,9 @@
+.agent-info{
+    margin:20rpx 0;
+}
+.agent-info image{
+    margin-right: 20rpx;
+}
+.comment-info{
+    margin:20rpx 20rpx;
+}

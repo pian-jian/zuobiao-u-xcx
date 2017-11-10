@@ -1,0 +1,85 @@
+.icon{
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+.icon-54{
+  height: 108rpx;
+  width: 108rpx;
+}
+.icon-30{
+  height: 60rpx;
+  width: 60rpx;
+}
+.icon-28{
+  height: 56rpx;
+  width: 56rpx;
+}
+.icon-18{
+  height: 36rpx;
+  width: 36rpx;
+}
+.icon-13{
+  height: 26rpx;
+  width:26rpx;
+}
+.icon-index-menu-1{
+  background-image: url(http://m.zuobiao.wang/images/index-menu-1.png);
+}
+.icon-index-menu-2{
+  background-image: url(http://m.zuobiao.wang/images/index-menu-2.png);
+}
+.icon-index-menu-3{
+  background-image: url(http://m.zuobiao.wang/images/index-menu-3.png);
+}
+.icon-index-menu-4{
+  background-image: url(http://m.zuobiao.wang/images/index-menu-4.png);
+}
+.icon-index-menu-5{
+  background-image: url(http://m.zuobiao.wang/images/index-menu-5.png);
+}
+.icon-index-menu-6{
+  background-image: url(http://m.zuobiao.wang/images/index-menu-6.png);
+}
+.icon-index-menu-7{
+  background-image: url(http://m.zuobiao.wang/images/index-menu-7.png);
+}
+.icon-jr_03{
+  background-image: url(http://m.zuobiao.wang/images/jr_03.png);
+}
+.icon-toolico_03{
+  background-image: url(http://m.zuobiao.wang/images/toolico_03.jpg);
+}
+.icon-toolico_05{
+  background-image: url(http://m.zuobiao.wang/images/toolico_05.jpg);
+}
+.icon-toolico_07{
+  background-image: url(http://m.zuobiao.wang/images/toolico_07.jpg);
+}
+.icon-toolico_09{
+  background-image: url(http://m.zuobiao.wang/images/toolico_09.jpg);
+}
+.icon-toolico_11{
+  background-image: url(http://m.zuobiao.wang/images/toolico_11.jpg);
+}
+.icon-toolico_13{
+  background-image: url(http://m.zuobiao.wang/images/toolico_13.jpg);
+}
+.icon-toolico_15{
+   background-image: url(http://m.zuobiao.wang/images/toolico_15.jpg);
+ }
+.icon-user_icon{
+  background-image: url(http://m.zuobiao.wang/images/user_icon.png);
+}
+.icon-search{
+  background-image: url(http://m.zuobiao.wang/images/icon-search.png);
+}
+.icon-anxinchengnuo-arrow{
+  background-image: url(http://m.jh.zuobiao.wang/fuwu/zhenfuwu/images/anxinchengnuo-arrow.png);
+}
+.icon-around-spirit{
+  background-image: url(http://m.zuobiao.wang/images/around-spirit.png);
+}
+
+
+

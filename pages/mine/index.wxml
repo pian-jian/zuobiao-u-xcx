@@ -1,0 +1,55 @@
+<view class="page">
+   <view class="login-frame flex-cc">
+       <view class="group-optbtn flex-lr">
+           <navigator url="login" class="whitelinebtn btnw45 mine-btn fsize16">登录</navigator>
+           <navigator url="register" class="whitelinebtn btnw45 mine-btn fsize16">注册</navigator>
+       </view>
+   </view>
+    <view class="mine-content section">
+        <ul>
+            <li class="flex-ll">
+                <view class="list-icon mine-concernedhouse"/>
+                <view class="li-info">
+                    <view class="flex-lr">
+                        <view>我关注的房源</view>
+                        <view class="f-liggray">></view>
+                    </view>
+                    <view class="hr-one"/>
+                </view>
+            </li>
+            <li class="flex-ll">
+                <view class="list-icon mine-concernedarea"/>
+                <view class="li-info">
+                    <view class="flex-lr">
+                        <view>我关注小区</view>
+                        <view class="f-liggray">></view>
+                    </view>
+                    <view class="hr-one"/>
+                </view>
+            </li>
+            <li class="flex-ll">
+                <view class="list-icon mine-concernednewhouse"/>
+                <view class="li-info">
+                    <view class="flex-lr">
+                        <view>我关注的新房</view>
+                        <view class="f-liggray">></view>
+                    </view>
+                    <view class="hr-one"/>
+                </view>
+            </li>
+            <li class="flex-ll">
+                <view class="list-icon mine-entrust"/>
+                <view class="li-info">
+                    <view class="flex-lr">
+                        <view>我的委托</view>
+                        <view class="f-liggray">></view>
+                    </view>
+                    <view class="hr-one"/>
+                </view>
+            </li>
+
+        </ul>
+    </view>
+
+
+</view>

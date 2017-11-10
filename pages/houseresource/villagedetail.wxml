@@ -1,0 +1,96 @@
+<import src="../template/swiper" />
+<view class="page">
+    <template is="swiper" data="{{moreImgCarry}}"/>
+    <view class="group-li show-title bg-grey  flex-ll">
+        <view class="section textoverflow">小区名称：{{list[0].communityname}}</view>
+    </view>
+    <view class="hr-one"/>
+    <view class="section group-li  flex-ll">
+        物业费用：{{list[0].wuyemoney}}元/平米/月
+    </view>
+    <view class="hr-one"/>
+    <view class="group-li section flex-ll">
+        <view class="w-half">
+            楼栋数：{{list[0].loudongNum}}栋
+        </view>
+        <view class="w-half">
+            房屋总数：{{list[0].houseSum}}栋
+        </view>
+    </view>
+    <view class="hr-one"/>
+    <view class="group-li section flex-ll">
+        <view class="w-half">
+            容积率：{{list[0].greening_rate}}%
+        </view>
+        <view class="w-half">
+            建造年代：{{list[0].communityAge}}年
+        </view>
+    </view>
+    <view class="hr-one"/>
+    <view class="group-li section flex-ll">
+        <view class="w-half">
+            绿化率：{{list[0].greening_rate}}%
+        </view>
+        <view class="w-half">
+            房屋类型：{{list[0].houseType}}
+        </view>
+    </view>
+    <view class="hr"/>
+    <view class="padding10 section">
+        <view>
+            小区最新二手房成交均价：<text class="red">{{list[0].junjia1}}</text>元/m²
+        </view>
+        <view class="fsize12 f-midgray">
+            环比上月<text wx:if="isup>0">下跌</text><text wx:elif="lsup>0">上涨</text>{{range}}
+        </view>
+    </view>
+    <view class="hr-one"/>
+    <canvas class="section padding10" canvas-id="price-chart2"></canvas>
+    <view class="hr-one"/>
+    <view class="flex-lr group-li section">
+        <view>全部二手房源<text class="red">{{list[0].ershoufangAll}}</text>套</view>
+        <view class="f-liggray">></view>
+    </view>
+    <view class="hr-one"/>
+    <view class="flex-lr group-li section">
+        <view>二手房成交历史<text class="red">{{list[0].xiaoquchengjiaolishiAll}}</text>套</view>
+        <view class="f-liggray">></view>
+    </view>
+    <view class="hr"/>
+    <view class="flex-lr group-li section">
+        <view>位置及周边</view>
+        <view class="f-liggray">></view>
+    </view>
+    <map id="map"
+         longitude="{{list[0].mapx}}"
+         latitude="{{list[0].mapy}}"
+         scale="14"
+         markers="{{markers}}"
+         bindmarkertap="tapMark"
+    ></map>
+    <view class="hr-one"/>
+    <view class="flex-ll section group-li">
+        <view class="w-half flex-ll">
+            <view class="icon-around-spirit icon-study"/>
+            14家教育机构
+        </view>
+        <view class="w-half flex-ll">
+            <view class="icon-around-spirit icon-buy"/>
+            35家商场超市
+        </view>
+    </view>
+    <view class="hr  trade-info"/>
+    <view class="flex-ll group-li fixed-bottom" style="width: 100%">
+        <view class="flex-vc f-midgray bg_white show-btn" style="width: 20%">
+            <view class="fsize16">☆</view>
+            <view>关注</view>
+        </view>
+        <view class="flex-vc f-midgray bg_white show-btn" style="width: 20%">
+            <view class="fsize16">☆</view>
+            <view>发送</view>
+        </view>
+        <view class="flex-vc bg_blue show-btn fsize16 white" style="width: 60%">
+            咨询经纪人
+        </view>
+    </view>
+</view>

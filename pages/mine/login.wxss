@@ -1,0 +1,13 @@
+.list-li{
+    height: 108rpx;
+    line-height: 108rpx;
+}
+.list-li input{
+    width: 70%;
+}
+button{
+    margin-top: 30rpx;
+}
+.desc{
+    margin-top: 40rpx;
+}

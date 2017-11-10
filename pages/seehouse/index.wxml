@@ -1,0 +1,15 @@
+<view class="page">
+    <view class="section">
+        <swiper indicator-dots="true" autoplay="true" indicator-color="rgba(0,0,0,.2)"
+                indicator-active-color="rgba(0,0,0,.4)" circular="true">
+            <block wx:for="{{imgUrls}}">
+                <swiper-item class="item-bg flex-vc">
+                    <image class="item-image" src="{{item.img}}"></image>
+                    <view class="fsize18 text1">{{item.text1}}</view>
+                    <view class="text2 f-liggray">{{item.text2}}</view>
+                </swiper-item>
+            </block>
+        </swiper>
+        <button class="bg_blue white btnw45"> 去预约 </button>
+    </view>
+</view>

@@ -1,0 +1,69 @@
+<import src="../template/swiper" />
+<view class="page">
+    <template is="swiper" data="{{moreImgCarry}}"/>
+    <view class="group-li flex-ll section">
+        学校名称：{{list[0].schooName}}
+    </view>
+    <view class="hr-one"/>
+    <view class="group-li flex-lr section">
+        <view >
+            学区房源:<text class="fsize12">{{fangyuan.pricezuidi}}~{{fangyuan.pricezuigao}}/平，{{fangyuan.taoshu}}套</text>
+        </view>
+        <view class="f-liggray">
+            >
+        </view>
+    </view>
+    <view class="hr-one"/>
+    <view class="group-li flex-ll section">
+        学校地址：{{list[0].address}}
+    </view>
+    <view class="hr"/>
+    <view class="group-li flex-lr section">
+        <view >
+            学区名额：查看本学区名额请登录
+        </view>
+        <view class="f-liggray">
+            >
+        </view>
+    </view>
+    <view class="hr-one"/>
+    <view class="group-li flex-ll section">
+        对口中学：{{list[0].duiKou}}
+    </view>
+    <view class="hr"/>
+    <view class="group-li flex-ll section f-midgray">
+        划片小区
+    </view>
+    <view class="hr-one"/>
+    <block wx:for="{{xiaoqu}}">
+        <view class="group-li flex-lr section">
+            <view>
+                {{item.communityname}}
+            </view>
+            <view>
+                {{item.houseprice}}/m²
+            </view>
+            <view class="f-liggray">
+                <text class="red">{{item.zongtaoshu}}套</text> >
+            </view>
+        </view>
+        <view class="hr-one"/>
+    </block>
+    <view class="hr"></view>
+    <view class="group-li flex-ll section">
+        招生简章
+    </view>
+    <view class="hr-one"/>
+    <view class="group-li flex-lr section">
+        <view >
+            学区名额：{{list[0].jianZhangTitle}}
+        </view>
+        <view class="f-liggray">
+            >
+        </view>
+    </view>
+    <view class="hr trade-info"/>
+    <button class="fixed-bottom flex-vc bg_blue show-btn fsize16 white" style="width: 100%;height: 108rpx">
+        咨询学区专家
+    </button>
+</view>

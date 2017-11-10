@@ -1,0 +1,30 @@
+<view class="page">
+    <view class="group-li section">
+        近30天的看房客户<text class="red">0</text>位，累计看房<text class="red">1</text>位
+    </view>
+    <view class="flex-lr section">
+        <view style="width: 30%">
+            看房日期
+        </view>
+        <view style="width: 30%">
+            带看人
+        </view>
+        <view style="width: 40%">
+            联系电话
+        </view>
+    </view>
+    <view class="hr-one"/>
+    <block wx:for="{{list}}">
+        <view class="flex-lr section f-midgray">
+            <view style="width: 30%">
+                {{item.dateC}}
+            </view>
+            <view style="width: 30%">
+                {{item.username}}
+            </view>
+            <view style="width: 40%">
+                {{item.tel}}
+            </view>
+        </view>
+    </block>
+</view>

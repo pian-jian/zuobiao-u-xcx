@@ -1,0 +1,12 @@
+<template name="swiper">
+    <swiper circular="true">
+        <block wx:for="{{moreImgCarry}}">
+            <swiper-item>
+                <image src="{{item.img}}" class="slide-image"/>
+                <view class="swiper-page white">
+                    {{index+1}}/{{moreImgCarry.length}}
+                </view>
+            </swiper-item>
+        </block>
+    </swiper>
+</template>

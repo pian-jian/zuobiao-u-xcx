@@ -1,0 +1,47 @@
+.login-frame{
+    height: 380rpx;
+    background-image: url(http://m.zuobiao.wang/images/bg-login.png);
+    background-position: center 0;
+    -webkit-background-size: auto 100%;
+    background-size: auto 100%;
+    background-color: #1273e1;
+    position: relative;
+}
+.group-optbtn{
+    width: 60%;
+    bottom: 40rpx;
+    position: absolute;
+}
+.mine-content {
+
+}
+.mine-content li{
+}
+.li-info{
+    width: 100%;
+    height: 108rpx;
+    line-height: 106rpx;
+    margin-left: 20rpx;
+}
+.list-icon{
+    display: inline-block;
+    width: 32rpx;
+    height: 32rpx;
+    background-image: url(http://m.zuobiao.wang/images/list-icon.png);
+    background-size: cover;
+}
+.mine-concernedhouse{
+    background-position: 0 .375px;
+}
+.mine-concernedarea{
+    background-position: 0 -16.375px;
+}
+.mine-concernednewhouse{
+    background-position: 0 -30px;
+}
+.mine-entrust{
+    background-position: 0 -45px;
+}
+.mine-btn{
+    text-align: center;
+}

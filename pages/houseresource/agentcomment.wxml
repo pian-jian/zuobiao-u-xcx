@@ -1,0 +1,28 @@
+<view class="page">
+    <block wx:for="{{list}}">
+        <view class="flex-lr section">
+            <view class="agent-info">
+                <view class="flex-ll">
+                    <image class="avatar" src="{{item.photo}}"/>
+                    <view>
+                        <view class="fsize18">
+                            {{item.username}}
+                        </view>
+                        <view class="red">
+                            {{item.tel}}
+                        </view>
+
+                    </view>
+                </view>
+            </view>
+            <view class="blue" data-tag_index="{{index}}" bindtap="callPhone">
+                马上联系
+            </view>
+        </view>
+        <view class="hr-one"/>
+        <view class="section comment-info">
+            <rich-text nodes="{{item.contentC}}"/>
+        </view>
+        <view class="hr"/>
+    </block>
+</view>

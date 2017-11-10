@@ -1,0 +1,60 @@
+{
+  "pages":[
+    "pages/index/index",
+
+    "pages/houseresource/xuequ",
+    "pages/houseresource/agentcomment",
+    "pages/houseresource/show",
+    "pages/houseresource/villagedetail",
+    "pages/houseresource/houserecord",
+
+    "pages/city/index",
+
+    "pages/map/maphouse",
+
+    "pages/mine/index",
+    "pages/mine/login",
+    "pages/mine/register",
+
+    "pages/seehouse/index",
+
+    "pages/service/index",
+
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "寻找你未来家的坐标",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#575757",
+    "selectedColor": "#1273e1",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "imgs/nav_01.png",
+      "selectedIconPath": "imgs/navcur_01.png",
+      "text": "首页"
+    },
+      {
+        "pagePath": "pages/service/index",
+        "iconPath": "imgs/nav_02.png",
+        "selectedIconPath": "imgs/navcur_02.png",
+        "text": "服务"
+      }, {
+        "pagePath": "pages/seehouse/index",
+        "iconPath": "imgs/nav_03.png",
+        "selectedIconPath": "imgs/navcur_03.png",
+        "text": "看房"
+      }, {
+        "pagePath": "pages/mine/index",
+        "iconPath": "imgs/nav_04.png",
+        "selectedIconPath": "imgs/navcur_04.png",
+        "text": "我的"
+      }]
+  }
+
+}

@@ -1,0 +1,87 @@
+/**index.wxss**/
+.banner{
+  width:100%;
+  height: 450rpx;
+  background-image: url("http://m.jh.zuobiao.wang/images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.banner-content{
+  width: 90%;
+  color:white;
+}
+.banner-content .flex-lr{
+  width: 100%;
+}
+.btn-location {
+  display: block;
+  width: 60px;
+  height: 25px;
+  line-height: 26px;
+  text-align: center;
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+  border-radius: 20px;
+  font-size: 13px;
+  margin-top: 0;
+  box-shadow: 0 2px 3px rgba(0,0,0,.25);
+}
+.bfbzfy{
+  width: 486rpx;
+  height: 96rpx;
+  margin-top: 30rpx;
+  background-image: url(http://m.zuobiao.wang/images/slogan.png);
+  background-size: cover;
+}
+.search-bar{
+  width: 100%;
+  height: 70rpx;
+  margin-top: 100rpx;
+  background-color: white;
+  border-radius: 10rpx;
+}
+.search-bar input{
+  width:80%;
+}
+.icon-search{
+  margin:22rpx;
+}
+.type-menu{
+  padding-top: 40rpx;
+}
+.type-menu .flex-vc{
+  width: 25%;
+  margin-bottom: 40rpx;
+}
+.index-help-type{
+  padding-top: 60rpx;
+}
+.index-help-type .flex-vc{
+  width: 20%;
+  margin-bottom: 40rpx;
+}
+.icon-54{
+  margin-bottom: 20rpx;
+}
+.icon-30{
+  margin-bottom: 10rpx;
+}
+.index-swipe{
+  height: 200rpx;
+}
+.slide-image{
+  width: 100%;
+  height: 100%;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.group-title{
+  margin-left: 30rpx;
+  margin-bottom:20rpx;
+  margin-top: 20rpx;
+}
+

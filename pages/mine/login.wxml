@@ -1,0 +1,21 @@
+<view class="page section">
+    <view class="flex-rr fsize16">
+        <navigator class="f-midgray" url="register" open-type="redirect">注册</navigator>
+    </view>
+    <view class="fsize20">
+        手机快捷登录
+    </view>
+    <view class="f-liggray desc fsize16">
+        未注册过的手机号将自动创建坐标网账号，经纪人不会看到您的手机号
+    </view>
+    <view class="flex-lr list-li">
+        <input type="number" placeholder="请输入手机号"/>
+        <view class="f-darkgray fsize16">发送验证码</view>
+    </view>
+    <view class="hr-one"/>
+    <view class="flex-ll list-li">
+        <input type="text" placeholder="请输入验证码"/>
+    </view>
+    <view class="hr-one"/>
+    <button class="bg_blue white">登录</button>
+</view>
