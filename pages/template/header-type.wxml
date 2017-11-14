@@ -1,0 +1,97 @@
+<view class="section flex-lr group-li tabs-title">
+    <view class="picker-li flex-cc {{valueObj.region>0?'blue':''}}" bindtap="showTypeView" data-tab-type="region" hidden="{{thregionhide}}">
+        区域
+    </view>
+    <view class="picker-li flex-cc {{valueObj.school>0?'blue':''}}" catchtap="showTypeView" data-tab-type="school" hidden="{{thschoolhide}}">
+        学校
+    </view>
+    <view class="picker-li flex-cc {{valueObj.price>0?'blue':''}}" catchtap="showTypeView" data-tab-type="price" hidden="{{thpricehide}}">
+        价格
+    </view>
+    <view class="picker-li flex-cc {{valueObj.spec>0?'blue':''}}" catchtap="showTypeView" data-tab-type="spec" hidden="{{thspechide}}">
+        房型
+    </view>
+    <view class="picker-li flex-cc {{valueObj.order>0||valueObj.style>0||valueObj.area>0||valueObj.tags.length>1||valueObj.tags>0||valueObj.number.length>0?'blue':''}}" hidden="{{thmorehide}}" catchtap="showTypeView" data-tab-type="more">
+        更多
+    </view>
+</view>
+<view class="hr-one"/>
+<view class="modal-type" hidden="{{modalHide}}">
+<view class="content">
+    <view class="section flex-lr group-li tabs-title">
+        <view class="picker-li flex-cc {{valueObj.region>0?'blue':''}}" bindtap="showTypeView" data-tab-type="region" hidden="{{thregionhide}}">
+            区域▼
+        </view>
+        <view class="picker-li flex-cc {{valueObj.school>0?'blue':''}}" catchtap="showTypeView" data-tab-type="school" hidden="{{thschoolhide}}">
+            学校▼
+        </view>
+        <view class="picker-li flex-cc {{valueObj.price>0?'blue':''}}" catchtap="showTypeView" data-tab-type="price" hidden="{{thpricehide}}">
+            价格▼
+        </view>
+        <view class="picker-li flex-cc {{valueObj.spec>0?'blue':''}}" catchtap="showTypeView" data-tab-type="spec" hidden="{{thspechide}}">
+            房型▼
+        </view>
+        <view class="picker-li flex-cc {{valueObj.order>0||valueObj.style>0||valueObj.area>0||valueObj.tags.length>1||valueObj.tags>0||valueObj.number.length>0?'blue':''}}" hidden="{{thmorehide}}" catchtap="showTypeView" data-tab-type="more">
+            更多▼
+        </view>
+    </view>
+    <view class="hr-one"/>
+    <view class="tabs-body" hidden="{{tbhide}}">
+        <block wx:for="{{multiObj[nvalue]}}">
+            <view class="flex-ll type-item {{item.isselect>0?'blue':''}}"
+                  data-tab-type="{{nvalue}}"
+                  data-tag-item-id="{{item.id}}"
+                  data-tag-item-text="{{item.text}}"
+                  bindtap="setTypeItem">
+                {{item.text}}
+            </view>
+            <view class="hr-one"/>
+        </block>
+    </view>
+    <view class="m-type" hidden="{{tbmorehide}}">
+        <view class="flex-lr">
+            <view class="picker-li m-type-header" style="height: 840rpx">
+                <view class="flex-cc group-li {{valueObj.order>0?'blue':''}}" catchtap="showTypeView" data-tab-type="order">
+                    排序
+                </view>
+                <view class="flex-cc group-li {{valueObj.style>0?'blue':''}}" catchtap="showTypeView" data-tab-type="style">
+                    装修
+                </view>
+                <view class="flex-cc group-li {{valueObj.area>0?'blue':''}}" catchtap="showTypeView" data-tab-type="area">
+                    面积
+                </view>
+                <view class="flex-cc group-li {{valueObj.tags.length>1||valueObj.tags>0?'blue':''}}" catchtap="showTypeView" data-tab-type="tags">
+                    标签
+                </view>
+                <view class="flex-cc group-li {{valueObj.number.length>0?'blue':''}}" catchtap="showTypeView" data-tab-type="number">
+                    房源编号
+                </view>
+            </view>
+            <view class="m-type-body" style="width:75%;height: 840rpx;border-bottom: 1rpx solid rgba(0,0,0,.2);border-left: 1rpx solid rgba(0,0,0,.2);">
+                <block wx:if="{{nvalue=='number'}}">
+
+                    <view class="flex-vc section">
+                        <input type="text" bindinput="housenumInput" value="{{housenumvalue}}" placeholder="请输入房源编号" />
+                    </view>
+
+                </block>
+                <block wx:else>
+                    <block wx:for="{{multiObj[nvalue]}}">
+                        <view class="type-item {{item.isselect>0?'blue':''}}"
+                              data-tab-type="{{nvalue}}"
+                              data-tag-item-id="{{item.id}}"
+                              data-tag-item-text="{{item.text}}"
+                              bindtap="setTypeItem">
+                            {{item.text}}
+                        </view>
+                        <view class="hr-one"/>
+                    </block>
+                </block>
+            </view>
+        </view>
+        <view class="flex-vc bg_blue section show-btn fsize16 white" bindtap="setMoreType">
+            确定
+        </view>
+    </view>
+</view>
+</view>

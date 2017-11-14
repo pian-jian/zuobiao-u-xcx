@@ -10,7 +10,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "1.6.4",
 	"appid": "wxa6dbfa46e62218ce",
-	"projectname": "u-%E5%9D%90%E6%A0%87%E7%BD%91",
+	"projectname": "%E5%9D%90%E6%A0%87-u",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -21,7 +21,21 @@
 			"list": []
 		},
 		"miniprogram": {
-			"list": []
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "lll",
+					"pathName": "pages/houseresource/agentcomment",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "houselist",
+					"pathName": "pages/index/volume",
+					"query": "spec=2&price=3"
+				}
+			]
 		}
 	}
 }

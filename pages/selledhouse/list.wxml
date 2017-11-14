@@ -1,0 +1,11 @@
+
+<import src="../template/twlist-item.wxml"/>
+
+<view class="page">
+<include src="../template/header-type.wxml"/>
+    <scroll-view scroll-y style="height: {{scrollHeight}}px;">
+        <block wx:for="{{list}}">
+            <template is="qylist-item" data="{{list}}"/>
+        </block>
+    </scroll-view>
+</view>

@@ -1,0 +1,9 @@
+<view class="page">
+    <view class="flex-vc group-li bg_white" style="width: 100%">
+        <view class="search-bar flex-ll section" bindscroll="scroll">
+            <view class="icon icon-13 icon-search"/>
+            <input type="text" placeholder="{{placeholder}}" focus="{{focus}}" />
+        </view>
+    </view>
+    <view class="hr-one"/>
+</view>

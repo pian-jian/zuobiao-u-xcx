@@ -86,10 +86,10 @@
     </view>
     <view class="hr"/>
     <view class="flex-cc flex-lr group-li">
-        <view class="flex-cc w-half">
+        <navigator class="flex-cc w-half" url="maparound">
             <view class="fsize16">位置及周边</view>
             <view class="f-liggray">></view>
-        </view>
+        </navigator>
         <view class="flex-cc w-half">
             <view class="fsize16">街景地图</view>
             <view class="f-liggray">></view>

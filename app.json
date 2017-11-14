@@ -2,11 +2,27 @@
   "pages":[
     "pages/index/index",
 
+    "pages/index/houselist__1",
+    "pages/index/search",
+
+    "pages/oldhouse/list",
+
+    "pages/newhouse/index",
+    "pages/newhouse/list",
+
+    "pages/selledhouse/list",
+
+    "pages/rentedhouse/list",
+
+
+    "pages/schoolhouse/list",
+
     "pages/houseresource/xuequ",
     "pages/houseresource/agentcomment",
     "pages/houseresource/show",
     "pages/houseresource/villagedetail",
     "pages/houseresource/houserecord",
+    "pages/houseresource/maparound",
 
     "pages/city/index",
 
@@ -56,5 +72,4 @@
         "text": "我的"
       }]
   }
-
 }

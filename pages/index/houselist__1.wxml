@@ -1,0 +1,32 @@
+<import src="../template/twlist-item.wxml"/>
+<view class="page">
+<view class="section flex-cc group-li">
+    <picker  class="picker-li flex-cc" mode="selector" data-tagindex="0" bindchange="typeChange" value="{{typeIndex[0]}}" range="{{typeArray[0]}}">
+        <view class="picker {{typeIndex[0]>0?'blue':''}}">
+            {{typeIndex[0]==0?"区域":typeArray[0][typeIndex[0]]}}▼
+        </view>
+    </picker>
+    <picker class="picker-li flex-cc" mode="selector" data-tagindex="1" bindchange="typeChange"  value="{{typeIndex[1]}}" range="{{typeArray[1]}}">
+        <view class="picker {{typeIndex[1]>0?'blue':''}}">
+            {{typeIndex[1]==0?"价格":typeArray[1][typeIndex[1]]}}▼
+        </view>
+    </picker>
+    <picker class="picker-li flex-cc" mode="selector" data-tagindex="2" bindchange="typeChange"  value="{{typeIndex[2]}}" range="{{typeArray[2]}}">
+        <view class="picker {{typeIndex[2]>0?'blue':''}}">
+            {{typeIndex[2]==0?"房型":typeArray[2][typeIndex[2]]}}▼
+        </view>
+    </picker>
+    <picker class="picker-li flex-cc" mode="multiSelector" data-tagindex="3" bindchange="typeChange" value="{{moreIndex}}" range="{{moreArray}}">
+        <view class="picker {{moreIndex[0]+moreIndex[1]+moreIndex[2]>0?'blue':''}}">
+            更多▼
+        </view>
+    </picker>
+</view>
+<view class="hr-one"/>
+<scroll-view scroll-y style="height: {{scrollHeight}}px;">
+    <block wx:for="{{list}}">
+        <template is="twlist-item" data="{{list}}"/>
+    </block>
+</scroll-view>
+
+</view>

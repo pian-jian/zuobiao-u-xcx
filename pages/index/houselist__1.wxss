@@ -1,0 +1,3 @@
+.picker-li{
+    width: 25%;
+}

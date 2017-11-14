@@ -129,9 +129,7 @@ Page({
     },
     onLoad:function(){
         var that=this;
-        wx.setNavigationBarTitle({
-            title: that.data.houselog[0].titleC
-        })
+        util.setBarTitle(that.data.houselog[0].titleC);
 
         var newChart= new charts({
             canvasId: 'price-chart',

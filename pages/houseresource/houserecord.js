@@ -11,10 +11,8 @@ Page({
         }]
     },
     onLoad:function(){
-        console.log(JSON.parse(this.data.list))
         wx.setNavigationBarTitle({
             title: "带看记录"
         })
     }
-
 })

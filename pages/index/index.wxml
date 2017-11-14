@@ -5,7 +5,7 @@
     <view class="flex-vc banner-content">
       <view class="flex-lr">
         <navigator url="../city/index" class="btn-location">
-          {{nowcity}}▼
+          {{nowcity}}
         </navigator>
         <navigator class="flex-vc" url="../mine/login">
           <view class="icon icon-18 icon-user_icon"/>
@@ -13,44 +13,44 @@
         </navigator>
       </view>
       <view class="bfbzfy"></view>
-      <view class="search-bar flex-ll">
+      <navigator class="search-bar flex-ll" url="search?from=index">
         <view class="icon icon-13 icon-search"/>
-        <input placeholder="请输入城区，商圈或学区房名。。。" focus="{{focus}}" />
-      </view>
+        <input type="text" disabled="true" placeholder="请输入城区，商圈或学区房名..." focus="{{focus}}" />
+      </navigator>
     </view>
 
   </view>
   <view class="flex-auto type-menu">
-    <view class="flex-vc">
-      <view class="icon icon-54 icon-index-menu-1"/>
+    <navigator class="flex-vc bg_white" url="../oldhouse/list">
+      <view class="icon icon-54 icon-index-menu-1 bg_white"/>
       <view>二手房</view>
-    </view>
-    <view class="flex-vc">
-      <view class="icon icon-54 icon-index-menu-2"/>
+    </navigator>
+    <navigator class="flex-vc"  url="../newhouse/index">
+      <view class="icon icon-54 icon-index-menu-2 bg_white"/>
       <view>新房</view>
-    </view>
-    <view class="flex-vc">
-      <view class="icon icon-54 icon-index-menu-3"/>
+    </navigator>
+    <navigator class="flex-vc" url="../rentedhouse/list">
+      <view class="icon icon-54 icon-index-menu-3 bg_white"/>
       <view>租房</view>
-    </view>
+    </navigator>
     <view class="flex-vc">
-      <view class="icon icon-54 icon-index-menu-4"/>
+      <view class="icon icon-54 icon-index-menu-4 bg_white"/>
       <view>卖房</view>
     </view>
     <view  class="flex-vc">
-        <view class="icon icon-54 icon-index-menu-5"/>
+        <view class="icon icon-54 icon-index-menu-5 bg_white"/>
         <view>地图找房</view>
     </view>
-    <view class="flex-vc">
-      <view class="icon icon-54 icon-index-menu-6"/>
+    <navigator class="flex-vc" url="../selledhouse/list">
+      <view class="icon icon-54 icon-index-menu-6 bg_white"/>
       <view>查成交</view>
-    </view>
-    <view class="flex-vc">
-      <view class="icon icon-54 icon-index-menu-7"/>
+    </navigator>
+    <navigator class="flex-vc" url="../schoolhouse/list">
+      <view class="icon icon-54 icon-index-menu-7 bg_white"/>
       <view>学区房</view>
-    </view>
+    </navigator>
     <view class="flex-vc">
-      <view class="icon icon-54 icon-jr_03"/>
+      <view class="icon icon-54 icon-jr_03 bg_white"/>
       <view>坐标金融</view>
     </view>
   </view>
@@ -114,7 +114,7 @@
     </view>
     <view class="hr-one"/>
     <block wx:for="{{list}}">
-      <template is="twlist-item" data="{{item}}"/>
+      <template is="xflist-item" data="{{item}}"/>
     </block>
   </view>
 </view>

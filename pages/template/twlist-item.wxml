@@ -1,12 +1,14 @@
-<template name="twlist-item">
+<template name="esflist-item">
     <navigator class="twlist-item section flex-lr" url="../houseresource/show">
         <view class="item-img">
-            <image class="thumb" src="http://apmcdn.eallcn.com/app_yun/2017-02/D19/5197/fyimg/1487467906404.jpg"/>
+            <view class="thumb" style="background-image: url('http://apmcdn.eallcn.com/app_yun/2017-02/D19/5197/fyimg/1487467906404.jpg')">
+                <text class="esf-tag fsize12">优选</text>
+            </view>
         </view>
         <view class="item-content">
             <view class="fsize16 bold">天龙南国名城 3室2厅 170万</view>
             <view class="flex-lr">
-                <view class="fsize12 f-liggray">
+                <view class="fsize12 f-midgray">
                     <view>3室2厅 130.5m² 南北</view>
                     <view>江南</view>
                 </view>
@@ -20,4 +22,105 @@
         </view>
     </navigator>
     <view class="hr-one"/>
+</template>
+
+<template name="xflist-item">
+<navigator class="twlist-item section flex-lr" url="">
+    <view class="item-img">
+        <image class="thumb" src="http://apmcdn.eallcn.com/app_yun/2017-02/D19/5197/fyimg/1487467906404.jpg"/>
+    </view>
+    <view class="item-content">
+        <view class="fsize16 bold">九州小区</view>
+        <view class="fsize12 f-midgray">义乌市后宅街道，与商城大道相邻</view>
+        <view class="flex-lr">
+            <view class="fsize12 f-midgray">
+                <view>126.20-144.30m²</view>
+            </view>
+            <view class="fsize12 bold red">
+                7200元/m²
+            </view>
+        </view>
+        <view class="flex-auto fsize10">
+            <view class="item-tag1">带花园</view>
+            <view class="item-tag2">公园房</view>
+            <view class="item-tag2">江景房</view>
+        </view>
+    </view>
+</navigator>
+<view class="hr-one"/>
+</template>
+
+<template name="qylist-item">
+<navigator class="twlist-item section flex-lr" url="">
+    <view class="item-img">
+        <view class="thumb" style="background-image: url('http://apmcdn.eallcn.com/app_yun/2017-02/D19/5197/fyimg/1487467906404.jpg')">
+            <text class="yqy-tag fsize12">已签约</text>
+        </view>
+
+    </view>
+    <view class="item-content">
+        <view class="fsize16 bold">紫荆公寓 2室2厅 106平</view>
+        <view class="fsize12">南 高楼层/18层</view>
+        <view class="flex-lr">
+            <view class="fsize12 f-midgray">
+                <view>签约价格：<text class="red bold">63万</text></view>
+            </view>
+            <view class="fsize12 bold red">
+                7200元/m²
+            </view>
+        </view>
+        <view class="fsize12 f-midgray">签约日期：2016-09-14</view>
+    </view>
+</navigator>
+<view class="hr-one"/>
+</template>
+
+<template name="zflist-item">
+<navigator class="twlist-item section flex-lr" url="">
+    <view class="item-img">
+        <view class="thumb" style="background-image: url('http://apmcdn.eallcn.com/app_yun/2017-02/D19/5197/fyimg/1487467906404.jpg')">
+        </view>
+    </view>
+    <view class="item-content">
+        <view class="fsize16 bold">天龙南国名城 3室2厅 12000元</view>
+        <view class="flex-lr">
+            <view class="fsize12 f-midgray">
+                <view>3室2厅 156m²</view>
+                <view>中央公馆</view>
+            </view>
+            <view class="fsize18 red">
+                12000元/月
+            </view>
+        </view>
+        <view class="flex-auto fsize10">
+            <view class="item-tag2">随时看房</view>
+        </view>
+    </view>
+</navigator>
+<view class="hr-one"/>
+</template>
+
+<template name="xqflist-item">
+<navigator class="twlist-item section flex-lr" url="">
+    <view class="item-img">
+        <view class="thumb" style="background-image: url('http://apmcdn.eallcn.com/app_yun/2017-02/D19/5197/fyimg/1487467906404.jpg')">
+        </view>
+    </view>
+    <view class="item-content">
+        <view class="fsize16 bold">义乌市绣湖小学教育集团春华校区</view>
+        <view class="flex-lr">
+            <view class="fsize12 f-midgray">
+                <view>2个划片校区/九年一贯制</view>
+                <view>851套房源在售</view>
+            </view>
+            <view class="fsize12 red bold">
+                14114元/平起
+            </view>
+        </view>
+        <view class="flex-auto fsize10">
+            <view class="item-tag2">公办</view>
+        </view>
+    </view>
+</navigator>
+<view class="hr-one"/>
 </template>

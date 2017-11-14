@@ -1,0 +1,54 @@
+.page{
+    position: relative;
+}
+.list-banner{
+    width: 100%;
+    height: 450rpx;
+    background-image:url('http://m.zuobiao.wang/images/newhouse_visual.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.search-bar{
+    position: absolute;
+    top:300rpx;
+    width: 90%;
+    height: 70rpx;
+    background-color: white;
+    border-radius: 10rpx;
+}
+.search-bar input{
+    width:80%;
+}
+.icon-search{
+    margin:22rpx;
+}
+.group-li {
+    line-height: 108rpx;
+    width: 30%;
+    text-align: center;
+}
+.ad{
+    width: 100%;
+    height: 200rpx;
+    background-image: url("http://m.zuobiao.wang/images/home_xinfang_banner.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.fixed-searchbar{
+    position: fixed;
+    top:0;
+    z-index: 100;
+    width: 100%;
+    height: 70rpx;
+    background-color: white;
+}
+.fixed-searchbar .search-bar{
+    position: absolute;
+    top:0;
+    width: 90%;
+    height: 70rpx;
+    background-color: white;
+    border-radius: 10rpx;
+}
+

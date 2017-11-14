@@ -99,9 +99,7 @@ Page({
         ]
     },
     onLoad:function(){
-        wx.setNavigationBarTitle({
-            title: this.data.list[0].schooName
-        })
+        util.setBarTitle(this.data.list[0].schooName)
     },
     onShow:function () {
         

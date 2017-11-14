@@ -1,0 +1,74 @@
+<import src="../template/twlist-item.wxml"/>
+<scroll-view class="page" scroll-y="true" bindscroll="scroll">
+    <view class="list-banner">
+    </view>
+    <navigator class="flex-vc section" url="../index/search?from=newhouse">
+        <view class="search-bar flex-ll" bindscroll="scroll">
+            <view class="icon icon-13 icon-search"/>
+            <input type="text" disabled="true" placeholder="请输入楼盘或区域" focus="{{focus}}" />
+        </view>
+    </navigator>
+    <navigator class="flex-vc fixed-searchbar" hidden="{{serchbarHidden}}" url="../index/search?from=newhouse">
+        <view class="search-bar flex-ll" bindscroll="scroll">
+            <view class="icon icon-13 icon-search"/>
+            <input type="text" disabled="true" placeholder="请输入楼盘或区域" focus="{{focus}}" />
+        </view>
+    </navigator>
+    <view class="flex-auto fsize16">
+        <navigator class="group-li" url="list?spec=2">
+            两居
+        </navigator>
+        <view class="flex-vc f-liggray">
+            |
+        </view>
+        <navigator class="group-li" url="list?spec=3">
+            三居
+        </navigator>
+        <view class="flex-vc f-liggray">
+            |
+        </view>
+        <navigator class="group-li" url="list?spec=4">
+            四居
+        </navigator>
+        <navigator class="group-li" url="list?price=7">
+            200-250万
+        </navigator>
+        <view class="flex-vc f-liggray">
+            |
+        </view>
+        <navigator class="group-li" url="list?price=8">
+            250-300万
+        </navigator>
+        <view class="flex-vc f-liggray">
+            |
+        </view>
+        <navigator class="group-li" url="list?price=9">
+            300-350万
+        </navigator>
+        <navigator class="group-li" url="list?style=4">
+            精装修
+        </navigator>
+        <view class="flex-vc f-liggray">
+            |
+        </view>
+        <navigator class="group-li" url="list">
+            在售楼盘
+        </navigator>
+        <view class="flex-vc f-liggray">
+            |
+        </view>
+        <navigator class="group-li blue"  url="list">
+            全部>
+        </navigator>
+    </view>
+    <view class="hr"/>
+    <navigator class="ad" url="list"></navigator>
+    <view class="hr"/>
+    <view class="section bold fsize16 flex-ll group-li">
+        热门楼盘
+    </view>
+    <view class="hr-one"/>
+    <block wx:for="{{list}}">
+        <template is="xflist-item" data="{{item}}"/>
+    </block>
+</scroll-view>

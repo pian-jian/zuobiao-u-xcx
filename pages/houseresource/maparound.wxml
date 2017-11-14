@@ -1,0 +1,16 @@
+<view class="page">
+    <view class="content">
+        <map longitude="{{locallng}}"
+             latitude="{{locallat}}"
+             markers="{{markers}}">
+        </map>
+    </view>
+    <view class="group-li type-opt fixed-bottom flex-cc">
+        <block wx:for="{{iconstyle}}">
+            <view class="flex-vc btncursor" data-iconindex="{{index}}" bindtap="searchType">
+                <view class="icon-opt  {{item.icon}}"/>
+                <view>{{item.text}}</view>
+            </view>
+        </block>
+    </view>
+</view>

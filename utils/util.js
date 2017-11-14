@@ -90,5 +90,10 @@ module.exports = {
         }
         return url;
     },
+    setBarTitle:function (t) {
+        wx.setNavigationBarTitle({
+            title: t
+        })
+    }
 
 }

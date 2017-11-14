@@ -1,14 +1,14 @@
 /**app.wxss**/
 @import "icon.wxss";
 
-page {
+page,.page {
     width: 100%;
     height: 100%;
-  background-color: #ffffff;
-  color: #000;
-  font-size: 28rpx;
-  line-height: 150%;
-  font-family: 'PingFang SC','sans-serif','Helvetica Neue','Helvetica','Arial';
+    background-color: #ffffff;
+    color: #000;
+    font-size: 28rpx;
+    line-height: 150%;
+    font-family: 'PingFang SC','sans-serif','Helvetica Neue','Helvetica','Arial';
 }
 .section{ margin: 0 4%; width:92%; overflow: hidden; }
 
@@ -212,10 +212,10 @@ page {
     font-weight:700;
 }
 .hr{
-  background: #f3f3f3;
+    background: #f3f3f3;
     border-top: 1px solid #e3e3e3;
-  height: 20rpx;
-  width:auto;
+    height: 20rpx;
+    width:auto;
 }
 .hr-clear{
   background: #fbf9fe;
@@ -238,7 +238,13 @@ page {
 .avatar-min,.avatar-min image{width:80rpx;height:80rpx; border-radius: 50%;}
 .avatar,.avatar image{width:128rpx;height:128rpx; border-radius: 50%;}
 .avatar-max,.avatar-max image{width:140rpx;height:140rpx; border-radius: 50%;}
-.thumb,.thumb image{width:180rpx;height:180rpx;}
+.thumb,.thumb image{
+    width:180rpx;
+    height:180rpx;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .rect-thumb,.rect-thumb image{width:93rpx;height:70rpx;}
 /*水平方向左右分布*/
 .flex-lr{
@@ -465,4 +471,56 @@ swiper image{
 }
 .w-half{
     width: 50%;
+}
+.btncursor {
+    cursor: pointer;
+}
+.item-img .thumb{
+    position: relative;
+}
+.yqy-tag{
+    position: absolute;
+    top:0;
+    left:0;
+    color: white;
+    background-color: rgba(0,0,0,.2);
+    padding: 5rpx 8rpx;
+}
+.esf-tag{
+    position: absolute;
+    top:0;
+    left:0;
+    color: white;
+    background-color: #F5BD19;
+    padding: 4rpx 8rpx;
+}
+.picker-li{
+    width: 25%;
+}
+.modal-type{
+    position: fixed;
+    top:0;
+    bottom:20;
+    left:0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,.6);
+    z-index: 100;
+}
+.modal-type .content{
+    background-color: white;
+    width: 100%;
+    padding-bottom: 10rpx;
+}
+.type-item{
+    margin: 14rpx;
+}
+.m-type .picker-li view{
+    border-bottom: 1rpx solid rgba(0,0,0,.2);
+    border-right: 1rpx solid rgba(0,0,0,.2);
+}
+.show-btn{
+    height: 80rpx;
+    line-height: 80rpx;
 }
