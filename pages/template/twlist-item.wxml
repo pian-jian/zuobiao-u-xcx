@@ -1,5 +1,5 @@
 <template name="esflist-item">
-    <navigator class="twlist-item section flex-lr" url="../houseresource/show">
+    <navigator class="twlist-item section flex-lr" url="/pages/oldhouse/show">
         <view class="item-img">
             <view class="thumb" style="background-image: url('http://apmcdn.eallcn.com/app_yun/2017-02/D19/5197/fyimg/1487467906404.jpg')">
                 <text class="esf-tag fsize12">优选</text>
@@ -25,7 +25,7 @@
 </template>
 
 <template name="xflist-item">
-<navigator class="twlist-item section flex-lr" url="">
+<navigator class="twlist-item section flex-lr" url="/pages/newhouse/show">
     <view class="item-img">
         <image class="thumb" src="http://apmcdn.eallcn.com/app_yun/2017-02/D19/5197/fyimg/1487467906404.jpg"/>
     </view>
@@ -76,20 +76,20 @@
 </template>
 
 <template name="zflist-item">
-<navigator class="twlist-item section flex-lr" url="">
+<navigator class="twlist-item section flex-lr" url="/pages/rentedhouse/show">
     <view class="item-img">
         <view class="thumb" style="background-image: url('http://apmcdn.eallcn.com/app_yun/2017-02/D19/5197/fyimg/1487467906404.jpg')">
         </view>
     </view>
     <view class="item-content">
-        <view class="fsize16 bold">天龙南国名城 3室2厅 12000元</view>
+        <view class="fsize16 bold">国际村 3室2厅 8350元</view>
         <view class="flex-lr">
             <view class="fsize12 f-midgray">
                 <view>3室2厅 156m²</view>
                 <view>中央公馆</view>
             </view>
             <view class="fsize18 red">
-                12000元/月
+                8350元/月
             </view>
         </view>
         <view class="flex-auto fsize10">

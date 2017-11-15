@@ -71,12 +71,23 @@
     <view class="hr-one"/>
     <view class="flex-ll section group-li">
         <view class="w-half flex-ll">
-            <view class="icon-around-spirit icon-study"/>
+            <view class="icon-around-spirit icon-around-study"/>
             14家教育机构
         </view>
         <view class="w-half flex-ll">
-            <view class="icon-around-spirit icon-buy"/>
+            <view class="icon-around-spirit icon-around-buy"/>
             35家商场超市
+        </view>
+    </view>
+    <view class="hr-one"/>
+    <view class="flex-ll section group-li">
+        <view class="w-half flex-ll">
+            <view class="icon-around-spirit icon-around-hosptal"/>
+            14家医疗机构
+        </view>
+        <view class="w-half flex-ll">
+            <view class="icon-around-spirit icon-around-play"/>
+            35家餐饮娱乐
         </view>
     </view>
     <view class="hr  trade-info"/>

@@ -1,0 +1,17 @@
+.bgimg-cover{
+    width: 20%;
+    height: 200rpx;
+}
+.housetype{
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+}
+map{
+    width: 100%;
+    height: 300rpx;
+}
+.aroundother{
+    width: 90%;
+    height: 240rpx;
+    position: relative;
+}

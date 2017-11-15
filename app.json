@@ -1,28 +1,31 @@
 {
   "pages":[
-    "pages/index/index",
 
+    "pages/index/index",
     "pages/index/houselist__1",
     "pages/index/search",
 
     "pages/oldhouse/list",
+    "pages/oldhouse/show",
 
     "pages/newhouse/index",
     "pages/newhouse/list",
+    "pages/newhouse/show",
 
     "pages/selledhouse/list",
 
     "pages/rentedhouse/list",
-
+    "pages/rentedhouse/show",
 
     "pages/schoolhouse/list",
 
     "pages/houseresource/xuequ",
     "pages/houseresource/agentcomment",
-    "pages/houseresource/show",
-    "pages/houseresource/villagedetail",
-    "pages/houseresource/houserecord",
     "pages/houseresource/maparound",
+    "pages/houseresource/villagedetail",
+
+
+    "pages/houseresource/houserecord",
 
     "pages/city/index",
 

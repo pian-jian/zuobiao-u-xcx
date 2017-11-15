@@ -56,17 +56,17 @@
         <view>编号：{{list[0].code}}</view>
     </view>
     <view class="hr-one"/>
-    <navigator class="flex-lr group-li section" url="xuequ">
+    <navigator class="flex-lr group-li section" url="../houseresource/xuequ">
         <view>学区：{{list[0].school}},{{list[0].primaryschool}}</view>
         <view class="f-liggray">></view>
     </navigator>
     <view class="hr-one"/>
-    <navigator class="flex-lr group-li section" url="villagedetail">
+    <navigator class="flex-lr group-li section" url="../houseresource/villagedetail">
         <view>小区：{{list[0].communityname}}</view>
         <view class="f-liggray">></view>
     </navigator>
     <view class="hr"/>
-    <navigator  class="flex-lr group-li section" url="agentcomment">
+    <navigator  class="flex-lr group-li section" url="../houseresource/agentcomment">
         <view>经纪人房评</view>
         <view class="f-liggray">></view>
     </navigator>
@@ -74,7 +74,7 @@
         {{houselog[0].contentC}}
     </view>
     <view class="hr"/>
-    <navigator class="flex-lr group-li section" url="houserecord">
+    <navigator class="flex-lr group-li section" url="../houseresource/houserecord">
         <view>客户看房记录</view>
         <view class="f-liggray">></view>
     </navigator>
@@ -86,7 +86,7 @@
     </view>
     <view class="hr"/>
     <view class="flex-cc flex-lr group-li">
-        <navigator class="flex-cc w-half" url="maparound">
+        <navigator class="flex-cc w-half" url="../houseresource/maparound">
             <view class="fsize16">位置及周边</view>
             <view class="f-liggray">></view>
         </navigator>
@@ -120,7 +120,7 @@
         面积：{{xiaoqujiaoyi.housearea[0]}},
         签约时间：{{xiaoqujiaoyi.dateC[0]}}
     </view>
-    <view class="hr trade-info"/>
+    <view class="hr m-potscontent"/>
     <view class="flex-ll group-li fixed-bottom" style="width: 100%">
         <view class="flex-vc f-midgray bg_white show-btn" style="width: 30%">
             <view class="fsize16">☆</view>

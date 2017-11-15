@@ -23,15 +23,15 @@ Page({
             imgCounts:"9"
         }],
         jingjiren:[{
-                avg:"100",
-                id:"52",
-                kanfangCount:"0",
-                photo:"uploadFile/userManager/131426642674106250.jpg",
-                tel:"4000669000转666",
-                userPhone:"15205895280",
-                username:"李敬敬",
-                zhicheng:"分行经理"
-            },{
+            avg:"100",
+            id: "2",
+            kanfangCount:"0",
+            photo:"uploadFile/userManager/131349730478281250.jpg",
+            tel:"4000669000转666",
+            userPhone:"18267060977",
+            username:"夏斌",
+            zhicheng:"总监"
+        },{
             avg:"",
             id:"93",
             kanfangCount:"1",
@@ -42,40 +42,30 @@ Page({
             zhicheng:"经纪人"
         }],
         list:[{
-            adminId:"52",
-            cheku:"6",
-            code:"yw815A6807",
-            communityAge:"1996",
-            communityid:"262",
-            communityname:"香山小区",
-            direction:"南北",
-            field1:"18061034131210093931600",
-            havekey:"",
-            housearea:"111",
-            housecode:"DJ-15-a6807",
-            housedecoration:"简装",
-            housefloors:"中楼层",
-            houseid:"15085",
-            housepic:"http://apmcdn.eallcn.com/app_yun/2016-08/D07/51/fyimg/1470539232541.jpg",
-            houseprice:"122",
-            housetype:"套房",
+            adminid:"2",
+            communityAge:"2000",
+            communityid:"215",
+            communityname:"国际村",
+            direction:"朝南",
+            displayC:",1,2,4,5,",
+            housearea:"180",
+            housecode:"zbzf0001",
+            housedecoration:"精装",
+            housefloors:"高楼层",
+            houseid:"30",
+            housenature:"2",
+            houseprice:"8350",
+            housetype:"楼中楼",
             housetypes:"3室2厅",
-            imgC:"http://apmcdn.eallcn.com/app_yun/2016-08/D07/51/fyimg/1470539241135.jpg",
-            isschool:"学区房",
-            mapX:"120.07115",
-            mapY:"29.306314",
-            minashui:"满两年",
-            moreImgC:"http://apmcdn.eallcn.com/app_yun/2016-08/D07/51/fyimg/1470539232541.jpg,http://apmcdn.eallcn.com/app_yun/2016-08/D07/51/fyimg/1470539206177.jpg,http://apmcdn.eallcn.com/app_yun/2016-08/D07/51/fyimg/1470539213050.jpg,http://apmcdn.eallcn.com/app_yun/2016-08/D07/51/fyimg/1470539215956.jpg,http://apmcdn.eallcn.com/app_yun/2016-08/D07/51/fyimg/1470539217880.jpg,http://apmcdn.eallcn.com/app_yun/2016-08/D07/51/fyimg/1470539221298.jpg,http://apmcdn.eallcn.com/app_yun/2016-08/D07/51/fyimg/1470539223500.jpg,http://apmcdn.eallcn.com/app_yun/2016-08/D07/51/fyimg/1470539229124.jpg",
-            mrate:"0.00408333333333333",
-            mrates:"2.65914487821223800",
-            primaryschool:"开发区小学",
-            primaryschoolid:"17",
-            regional:"稠江",
-            school:"稠江中学",
-            schoolid:"33",
-            title:"清爽装修    黄金楼层   靠近经济开发区学校",
-            titleC:"清爽装修    黄金楼层   靠近经济开发区学校",
-            titleD:"香山小区 3室2厅 122万"
+            imgC:"20170929110708457625.jpg",
+            interiorpic:"130985188928206250.jpg",
+            louceng:"5",
+            mapX:"120.089404",
+            mapY:"29.29025",
+            moreImgC:"20170929110707020125.jpg,20170929110707207625.jpg,20170929110707426375.jpg,20170929110707645125.jpg,20170929110707848250.jpg,20170929110708051375.jpg,20170929110708270125.jpg,20170929110708457625.jpg",
+            oldPrice:"8350",
+            title:"国际村 3室2厅 8350元",
+            weizhi:"3"
         }],
         pinglun:"**本人对此房了解透彻，看房联系右方转接来电**<br>香山小区 <br>1：确权面积11...",
         xiaoqujiaoyi:{
@@ -93,31 +83,31 @@ Page({
         "http://apmcdn.eallcn.com/app_yun/2016-08/D07/51/fyimg/1470539223500.jpg," +
         "http://apmcdn.eallcn.com/app_yun/2016-08/D07/51/fyimg/1470539229124.jpg",
         moreImgCarry:[{
-            li:1,
+            id:1,
             img:"http://apmcdn.eallcn.com/app_yun/2016-08/D07/51/fyimg/1470539232541.jpg"
         },{
-            li:2,
+            id:2,
             img:"http://apmcdn.eallcn.com/app_yun/2016-08/D07/51/fyimg/1470539206177.jpg"
         },{
-            li:3,
+            id:3,
             img:"http://apmcdn.eallcn.com/app_yun/2016-08/D07/51/fyimg/1470539213050.jpg"
         },{
-            li:4,
+            id:4,
             img:"http://apmcdn.eallcn.com/app_yun/2016-08/D07/51/fyimg/1470539215956.jpg"
         },{
-            li:5,
+            id:5,
             img:"http://apmcdn.eallcn.com/app_yun/2016-08/D07/51/fyimg/1470539217880.jpg"
         },{
-            li:6,
+            id:6,
             img:"http://apmcdn.eallcn.com/app_yun/2016-08/D07/51/fyimg/1470539232541.jpg"
         },{
-            li:7,
+            id:7,
             img:"http://apmcdn.eallcn.com/app_yun/2016-08/D07/51/fyimg/1470539221298.jpg"
         },{
-            li:8,
+            id:8,
             img:"http://apmcdn.eallcn.com/app_yun/2016-08/D07/51/fyimg/1470539223500.jpg"
         },{
-            li:9,
+            id:9,
             img:"http://apmcdn.eallcn.com/app_yun/2016-08/D07/51/fyimg/1470539229124.jpg"
         }],
         markers:[{
@@ -131,31 +121,9 @@ Page({
         var that=this;
         util.setBarTitle(that.data.houselog[0].titleC);
 
-        var newChart= new charts({
-            canvasId: 'price-chart',
-            type: 'line',
-            categories: that.data.housetu.month,
-            series: [{
-                name: '价格走势',
-                data: that.data.housetu.data1,
-                format: function (val) {
-                    return val.toFixed(0) + '万';
-                }
-            }],
-            yAxis: {
-                title: '',
-                format: function (val) {
-                    return parseInt(val);
-                },
-                min: 0
-            },
-            width: 350,
-            height: 150
-        });
-        
     },
     onShow:function () {
-        
+
     },
     tapMark:function(e){
         console.log(e);

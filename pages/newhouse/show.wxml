@@ -1,0 +1,171 @@
+<import src="../template/swiper" />
+<view class="page">
+    <template is="swiper" data="{{moreImgCarry}}"/>
+    <view class="section">
+        <view class="flex-ll group-li">
+            <text class="fsize18 blod">九州小区</text>
+            <text class="bold f-midgray">普通住宅 - 在售</text>
+        </view>
+        <view class="red">
+            均价：<text class="fsize18">7200元/m²</text>
+        </view>
+        <view class="flex-ll group-li f-liggray">
+            <view class="item-tag-grayline">普通住宅</view>
+            <view class="item-tag-grayline">在售</view>
+            <view class="item-tag-grayline">近市场</view>
+            <view class="item-tag-grayline">带飘窗</view>
+        </view>
+        <view class="hr-one"/>
+        <view class="group-li flex-ll f-midgray">
+            地址：{{list[0].addressC}}
+        </view>
+        <view class="hr-one"/>
+        <view class="group-li flex-ll f-midgray">
+            开盘时间：{{list[0].open_time}}
+        </view>
+    </view>
+    <view class="hr"/>
+    <view class="section">
+        <view class="flex-lr group-li">
+            <view class="flex-ll fsize16">
+                在售户型<text class="f-liggray">（2种）</text>
+            </view>
+            <view class="f-liggray">
+                >
+            </view>
+        </view>
+        <block wx:for="{{saletype}}">
+            <view class="flex-lr housetype">
+                <view class="bgimg-cover" style="background-image: url('{{item.imgC}}')">
+                </view>
+                <view style="width: 78%">
+                    <view class="f-midgray bold fsize16">
+                        {{item.shiC}}室{{item.tingC}}厅  {{item.areaC}}m²
+                    </view>
+                    <view class="group-li flex-ll f-liggray fsize12">
+                        约<text class="fsize16 bold red"> {{item.price}}</text><text class="red">万</text>
+                    </view>
+                    <view class="f-liggray flex-auto">
+                        <block wx:for="{{item.htypearray}}">
+                            <text class="tag">{{item}}</text>
+                        </block>
+                    </view>
+                </view>
+            </view>
+            <view class="hr-one"/>
+        </block>
+    </view>
+    <view class="hr"/>
+    <view class="flex-lr group-li section">
+        <view class="flex-ll fsize16">
+            楼盘信息
+        </view>
+        <view class="f-liggray">
+            >
+        </view>
+    </view>
+    <view class="flex-ll section group-li">
+        <view class="f-liggray group-lh">
+            开发商
+        </view>
+        <view class="group-lb f-midgray">
+            绿城房地产集团有限公司
+        </view>
+    </view>
+    <view class="hr-one"/>
+    <view class="flex-ll section group-li">
+        <view class="f-liggray group-lh">
+            最新开盘
+        </view>
+        <view class="group-lb f-midgray">
+            2014-03-10开盘
+        </view>
+    </view>
+    <view class="hr-one"/>
+    <view class="flex-ll section group-li">
+        <view class="f-liggray group-lh">
+            最早交房
+        </view>
+        <view class="group-lb f-midgray">
+            2016-06-30
+        </view>
+    </view>
+    <view class="hr-one"/>
+    <view class="flex-ll section group-li">
+        <view class="f-liggray group-lh">
+            产权年限
+        </view>
+        <view class="group-lb f-midgray">
+            70年
+        </view>
+    </view>
+    <view class="hr"/>
+    <view class="section">
+        <view class="flex-lr group-li">
+            <view class="flex-ll fsize16">
+                位置及周边
+            </view>
+            <view class="f-liggray">
+                >
+            </view>
+        </view>
+        <map id="map"
+             longitude="{{list[0].mapx}}"
+             latitude="{{list[0].mapy}}"
+             scale="14"
+             markers="{{markers}}"
+             bindmarkertap="tapMark"
+        ></map>
+        <view class="flex-ll group-li">
+            <view class="w-half flex-ll">
+                <view class="icon-around-spirit icon-around-study"/>
+                14家教育机构
+            </view>
+            <view class="w-half flex-ll">
+                <view class="icon-around-spirit icon-around-buy"/>
+                35家商场超市
+            </view>
+        </view>
+    </view>
+    <view class="hr-one"/>
+    <view class="flex-ll section group-li">
+        <view class="w-half flex-ll">
+            <view class="icon-around-spirit icon-around-hosptal"/>
+            14家医疗机构
+        </view>
+        <view class="w-half flex-ll">
+            <view class="icon-around-spirit icon-around-play"/>
+            35家餐饮娱乐
+        </view>
+    </view>
+    <view class="hr"/>
+    <view class="section">
+        <view class="flex-ll group-li f-midgray fsize16">
+            周边推荐
+        </view>
+        <view class="flex-auto">
+            <block wx:for="{{samehouse}}">
+                <view class="w-half">
+                    <view class="aroundother bgimg-conver" style="background-image: url('{{item.field1}}')">
+                        <view class="dd-tag">待定</view>
+                    </view>
+                    <view class="group-li flex-ll">
+                        {{item.titleC}}
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>
+    <view class="hr-one m-potscontent"/>
+    <view class="group-li fixed-bottom bg_white" style="width: 100%">
+        <view class="hr-one"></view>
+        <view class="section flex-lr  f-liggray" style="height: 100%">
+            <view class="flex-ll">
+                <view class="icon icon-28 icon-tels"/> 免费咨询
+
+            </view>
+            <view class="icon icon-28 icon-telss"/>
+        </view>
+    </view>
+</view>
+

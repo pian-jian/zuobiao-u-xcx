@@ -1,0 +1,103 @@
+<import src="../template/swiper" />
+<view class="page">
+<template is="swiper" data="{{moreImgCarry}}"/>
+<view class="group-li show-title bg-grey fsize16 bold flex-ll">
+    <view class="section textoverflow">{{list[0].title}}</view>
+</view>
+<view class="hr-one"/>
+<view class="flex-cc show-info">
+    <view class="flex-vc fsize16">
+        <view>租金</view>
+        <view class="red">{{list[0].houseprice}}元</view>
+    </view>
+    <view class="flex-vc">
+        <view>户型</view>
+        <view class="red">{{list[0].housetypes}}</view>
+    </view>
+    <view class="flex-vc">
+        <view>面积</view>
+        <view class="red">{{list[0].housearea}}㎡</view>
+    </view>
+</view>
+<view class="hr-one"/>
+<view class="flex-ll group-li section">
+    <view class="w-half">楼层：{{list[0].housefloors}}</view>
+    <view>朝向：{{list[0].direction}}</view>
+</view>
+<view class="hr-one"/>
+<view class="flex-ll group-li section">
+    <view class="w-half">装修：{{list[0].housedecoration}}</view>
+    <view>楼型：{{list[0].housetype}}</view>
+</view>
+<view class="hr-one"/>
+<view class="flex-ll group-li section">
+    <view class="w-half">首付：36.60万</view>
+    <view>月供：3487.17元</view>
+</view>
+<view class="hr-one"/>
+
+
+<view class="hr-one"/>
+<view class="flex-ll group-li section">
+    <view class="w-half">年代：{{list[0].communityAge}}</view>
+    <view>编号：{{list[0].housecode}}</view>
+</view>
+
+<view class="hr-one"/>
+<navigator class="flex-lr group-li section" url="../houseresource/villagedetail">
+    <view>小区：{{list[0].communityname}}</view>
+    <view class="f-liggray">></view>
+</navigator>
+<view class="hr"/>
+<navigator  class="flex-lr group-li section" url="../houseresource/agentcomment">
+    <view>经纪人房评</view>
+    <view class="f-liggray">></view>
+</navigator>
+<view class="section f-midgray  textsoverflow">
+
+</view>
+<view class="hr"/>
+<navigator class="flex-lr group-li section" url="../houseresource/houserecord">
+    <view>客户看房记录</view>
+    <view class="f-liggray">></view>
+</navigator>
+<view class="hr-one"/>
+<view class="section f-midgray show-comment textoverflow flex-ll">
+    近一个月新增
+    <text class="red">{{houselook[0].counts}}</text>
+    位看房记录，累计看房<text class="red">{{houselooks[0].counts}}</text>位
+</view>
+<view class="hr"/>
+<navigator class="flex-lr section group-li" url="../houseresource/maparound">
+    <view class="fsize16">位置及周边</view>
+    <view class="f-liggray">></view>
+</navigator>
+<virew class="hr-one"/>
+<map id="map"
+     longitude="{{list[0].mapX}}"
+     latitude="{{list[0].mapY}}"
+     scale="14"
+     markers="{{markers}}"
+     bindmarkertap="tapMark"
+></map>
+<view class="hr"/>
+<view class="flex-lr group-li section">
+    <view>小区成交历史</view>
+    <view class="f-liggray">></view>
+</view>
+<view class="section f-midgray">
+</view>
+<view class="hr m-potscontent"/>
+<view class="flex-ll group-li fixed-bottom" style="width: 100%">
+    <view class="flex-vc f-midgray bg_white show-btn" style="width: 30%">
+        <view class="fsize16">☆</view>
+        <view>关注</view>
+    </view>
+    <view class="flex-vc bg_orange show-btn fsize16 white" style="width: 30%">
+        预约看房
+    </view>
+    <view class="flex-vc bg_blue w-half show-btn fsize16 white">
+        咨询经纪人
+    </view>
+</view>
+</view>

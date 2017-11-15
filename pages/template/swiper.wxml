@@ -1,5 +1,5 @@
 <template name="swiper">
-    <swiper circular="true">
+    <swiper class="banner-swiper" circular="true">
         <block wx:for="{{moreImgCarry}}">
             <swiper-item>
                 <image src="{{item.img}}" class="slide-image"/>

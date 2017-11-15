@@ -114,7 +114,7 @@
     </view>
     <view class="hr-one"/>
     <block wx:for="{{list}}">
-      <template is="xflist-item" data="{{item}}"/>
+      <template is="esflist-item" data="{{item}}"/>
     </block>
   </view>
 </view>

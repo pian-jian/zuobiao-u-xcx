@@ -8,18 +8,6 @@ map{
     height: 562rpx;
     margin-bottom: 20rpx;
 }
-.icon-study{
-    height: 25px;
-    width: 25px;
-    background-position: 0 0;
-    background-size: 25px 100px;
-}
-.icon-buy{
-    height: 25px;
-    width: 25px;
-    background-position: 0 -75px;
-    background-size: 25px 100px;
-}
 .show-btn{
     height: 100%;
     z-index: 10000;

@@ -1,0 +1,34 @@
+.group-li{
+    height: 108rpx;
+}
+.show-title{
+    padding-left: 20rpx;
+    width: 100%;
+    box-sizing: border-box;
+}
+.show-info .flex-vc{
+    width: 33.3%;
+    padding: 20rpx 0;
+}
+
+.show-comment{
+    height:120rpx;
+    line-height: 40rpx;
+}
+map{
+    width: 100%;
+    height: 562rpx;
+}
+.trade-info{
+    margin-bottom: 108rpx;
+}
+.show-btn{
+    height: 100%;
+    z-index: 10000;
+}
+.swiper-page{
+    z-index: 100;
+    position: absolute;
+    bottom: 20rpx;
+    right: 20rpx;
+}
