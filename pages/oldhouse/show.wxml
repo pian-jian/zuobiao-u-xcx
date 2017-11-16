@@ -56,7 +56,7 @@
         <view>编号：{{list[0].code}}</view>
     </view>
     <view class="hr-one"/>
-    <navigator class="flex-lr group-li section" url="../houseresource/xuequ">
+    <navigator class="flex-lr group-li section" url="../schoolhouse/show">
         <view>学区：{{list[0].school}},{{list[0].primaryschool}}</view>
         <view class="f-liggray">></view>
     </navigator>
@@ -110,10 +110,10 @@
     <canvas class="section" canvas-id="price-chart">
     </canvas>
     <view class="hr"/>
-    <view class="flex-lr group-li section">
+    <navigator class="flex-lr group-li section" url="../selledhouse/list?id=123">
         <view>小区成交历史</view>
         <view class="f-liggray">></view>
-    </view>
+    </navigator>
     <view class="section f-midgray">
         户型：{{xiaoqujiaoyi.housetypes[0]}},
         成交价：<text class="red">{{xiaoqujiaoyi.priceC[0]}}</text>,

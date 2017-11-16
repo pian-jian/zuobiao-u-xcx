@@ -125,8 +125,8 @@ page,.page {
 .margin5{
     margin: 5rpx;
 }
-.mleft10{
-    margin-left: 10rpx;
+.mleft14{
+    margin-left: 28rpx;
 }
 .mright2{
     margin-right: 2rpx;
@@ -146,8 +146,8 @@ page,.page {
 .mtop10{
     margin-top: 10rpx;
 }
-.mtop13{
-    margin-top: 13rpx;
+.mtop14{
+    margin-top: 28rpx;
 }
 .mbottom10{
     margin-bottom: 10rpx;
@@ -157,6 +157,9 @@ page,.page {
 }
 .mtop16{
     margin-top: 16rpx;
+}
+.mbottom14{
+    margin-bottom: 28rpx;
 }
 .mbottom16{
     margin-bottom: 16rpx;
@@ -302,7 +305,7 @@ page,.page {
 }
 .fixed-bottom{
     position: fixed;
-    bottom: 0rpx;
+    bottom: 0;
 }
 
 .h1{
@@ -433,6 +436,8 @@ page,.page {
     padding: 0 8rpx;
     border-radius: 20rpx;
     margin:6rpx;
+    white-space: nowrap;
+    height: 40rpx;
 }
 .btnw45{
     width: 45%;

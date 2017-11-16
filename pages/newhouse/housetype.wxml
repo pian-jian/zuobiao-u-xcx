@@ -1,0 +1,22 @@
+<view class="page">
+    <swiper class="banner-swiper" circular="true">
+        <block wx:for="{{saletype}}">
+            <swiper-item>
+                <image src="{{item.imgC}}" class="slide-image"/>
+                <view class="flex-cc mbottom14 mtop14 ">
+                    {{index+1}}/{{saletype.length}}
+                </view>
+                <view class="hr-one section"/>
+                <view class="section group-li flex-ll">
+                    {{item.shiC}}室{{item.tingC}}厅{{item.weiC}}卫 {{item.orientationC}} {{item.areaC}}m²
+                </view>
+                <view class="section group-li flex-auto">
+                    <block wx:for="{{item.housetypearray}}">
+                        <view class="item-tag-grayline">{{item}}</view>
+                    </block>
+
+                </view>
+            </swiper-item>
+        </block>
+    </swiper>
+</view>

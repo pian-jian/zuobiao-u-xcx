@@ -85,12 +85,18 @@ Page({
             var n_multiObj=this.data.multiObj;
             for (var i in opt){
                 console.log(i);
-                n_multiObj[i].map(function(r,n){
-                    if(r.id==opt[i]){
-                        r.isselect=1;
-                    }
-                    return r;
-                })
+                if(i!="id"){
+                    n_multiObj[i].map(function(r,n){
+                        if(r.id==opt[i]){
+                            r.isselect=1;
+                        }
+                        return r;
+                    })
+                }else{
+                    this.setData({
+                        thregionhide:true
+                    })
+                }
             }
             this.setData({
                 valueObj:opt,
@@ -99,6 +105,7 @@ Page({
         }
         wx.getSystemInfo({
             success:function(res){
+                console.log("jgsadfhkjsgadfhjkgsadfyhjsakdftguydsogsdiafhjdk");
                 that.setData({
                     windowWidth:res.windowWidth,
                     windowHeight:res.windowHeight,

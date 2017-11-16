@@ -81,10 +81,10 @@
      bindmarkertap="tapMark"
 ></map>
 <view class="hr"/>
-<view class="flex-lr group-li section">
+<navigator class="flex-lr group-li section">
     <view>小区成交历史</view>
     <view class="f-liggray">></view>
-</view>
+</navigator>
 <view class="section f-midgray">
 </view>
 <view class="hr m-potscontent"/>

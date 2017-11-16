@@ -1,0 +1,132 @@
+<view class="page">
+    <view class="section flex-ll group-li bold fsize18">
+        {{list[0].nameC}}
+    </view>
+    <view class="section flex-ll group-li">
+        <view class="f-midgray group-lh" >
+            楼盘信息
+        </view>
+        <view>{{list[0].stateC}}</view>
+    </view>
+    <view class="hr-one"/>
+    <view class="section flex-ll group-li">
+        <view class="f-midgray group-lh" >
+            参考均价
+        </view>
+        <view>{{list[0].price}}元/m²</view>
+    </view>
+    <view class="hr-one"/>
+    <view class="section flex-ll group-li">
+        <view class="f-midgray group-lh" >
+            最新开盘
+        </view>
+        <view>{{list[0].open_time}}开盘</view>
+    </view>
+    <view class="hr-one"/>
+    <view class="section flex-ll group-li">
+        <view class="f-midgray group-lh" >
+            最早交房
+        </view>
+        <view>{{list[0].completion_time}}</view>
+    </view>
+    <view class="hr"/>
+    <view class="section flex-ll group-li">
+        <view class="f-midgray group-lh" >
+            区域位置
+        </view>
+        <view>{{list[0].regional}}</view>
+    </view>
+    <view class="hr-one"/>
+    <view class="section flex-ll group-li">
+        <view class="f-midgray group-lh" >
+            楼盘地址
+        </view>
+        <view>{{list[0].addressC}}</view>
+    </view>
+    <view class="hr-one"/>
+    <view class="section flex-ll group-li">
+        <view class="f-midgray group-lh" >
+            售楼地址
+        </view>
+        <view>{{list[0].saleaddress}}</view>
+    </view>
+    <view class="hr"/>
+    <view class="section flex-ll group-li">
+        <view class="f-midgray group-lh" >
+            产权年限
+        </view>
+        <view>{{list[0].propertyright}}年</view>
+    </view>
+    <view class="hr-one"/>
+    <view class="section flex-ll group-li">
+        <view class="f-midgray group-lh" >
+            装修情况
+        </view>
+        <view>{{list[0].decoration}}</view>
+    </view>
+    <view class="hr-one"/>
+    <view class="section flex-ll group-li">
+        <view class="f-midgray group-lh" >
+            容积率
+        </view>
+        <view>{{list[0].plotrate}}</view>
+    </view>
+    <view class="hr-one"/>
+    <view class="section flex-ll group-li">
+        <view class="f-midgray group-lh" >
+            绿化率
+        </view>
+        <view>{{list[0].greenrate}}</view>
+    </view>
+    <view class="hr-one"/>
+    <view class="section flex-ll group-li">
+        <view class="f-midgray group-lh" >
+            规划户数
+        </view>
+        <view>{{list[0].totalnum}}</view>
+    </view>
+    <view class="hr-one"/>
+    <view class="section flex-ll group-li">
+        <view class="f-midgray group-lh" >
+            规划车位
+        </view>
+        <view>{{list[0].parkinglot}}</view>
+    </view>
+    <view class="hr"/>
+    <view class="section flex-ll group-li">
+        <view class="f-midgray group-lh" >
+            物业类型
+        </view>
+        <view>{{list[0].typC}}</view>
+    </view>
+    <view class="hr-one"/>
+    <view class="section flex-ll group-li">
+        <view class="f-midgray group-lh" >
+            物业公司
+        </view>
+        <view>{{list[0].propertycompany}}</view>
+    </view>
+    <view class="hr-one"/>
+    <view class="section flex-ll group-li">
+        <view class="f-midgray group-lh" >
+            物业费
+        </view>
+        <view></view>
+    </view>
+    <view class="hr-one"/>
+    <view class="section flex-ll group-li">
+        <view class="f-midgray group-lh" >
+            供暖方式
+        </view>
+        <view></view>
+    </view>
+    <view class="hr-one"/>
+    <view class="section flex-ll group-li">
+        <view class="f-midgray group-lh" >
+            水电情况
+        </view>
+        <view>{{list[0].hydropower}}</view>
+    </view>
+    <view class="hr"/>
+
+</view>

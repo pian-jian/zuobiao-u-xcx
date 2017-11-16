@@ -1,0 +1,154 @@
+<import src="../template/swiper" />
+
+<view class="page">
+    <template is="swiper" data="{{moreImgCarry}}"/>
+    <view class="f-signed-logo"/>
+    <view class="section group-li flex-ll fsize16 bold">
+        {{list[0].communityname}}{{list[0].housetypes}}{{list[0].housearea}}
+    </view>
+    <view class="hr-one mleft14"/>
+    <view class="group-li section flex-ll mtop14 mbottom14">
+        <view class="w-half" style="border-right: 2rpx solid rgba(0,0,0,.2)">
+            <view class="fsize12 f-midgray">
+                签约价格
+            </view>
+            <view class="fsize16 red bold">
+                158.00<text class="fsize12">万</text>
+            </view>
+        </view>
+        <view class="w-half">
+            <view class="fsize12 f-midgray section">
+                单价
+            </view>
+            <view class="fsize16 red bold section">
+                21644<text class="fsize12">元/平</text>
+            </view>
+        </view>
+    </view>
+    <view class="hr"/>
+    <view class="section flex-lr group-li">
+        <view class="w-half">
+            <text class="f-midgray">日期:</text>{{list[0].dateC}}
+        </view>
+        <view class="w-half">
+            <text class="f-midgray">来源:</text>{{list[0].field1}}
+        </view>
+    </view>
+    <view class="hr-one"/>
+    <view class="section flex-lr group-li">
+        <view class="w-half">
+            <text class="f-midgray">楼层:</text>{{list[0].housefloors}}
+        </view>
+        <view class="w-half">
+            <text class="f-midgray">朝向:</text>{{list[0].direction}}
+        </view>
+    </view>
+    <view class="hr-one"/>
+    <view class="section flex-lr group-li">
+        <view class="w-half">
+            <text class="f-midgray">楼型:</text>{{list[0].housetype}}
+        </view>
+        <view class="w-half">
+            <text class="f-midgray">年代:</text>{{list[0].communityAge}}
+        </view>
+    </view>
+    <view class="hr"/>
+    <navigator class="group-li flex-lr section" url="/pages/selledhouse/list?spec=2">
+        <view class="bold fsize16">
+            同户型成交
+        </view>
+        <view class="f-liggray">
+            >
+        </view>
+    </navigator>
+    <view class="hr-one mleft14"/>
+    <view class="twlist-item section flex-lr">
+        <view class="item-img">
+            <view class="thumb" style="background-image: url('http://apmcdn.eallcn.com/app_yun/2017-02/D19/5197/fyimg/1487467906404.jpg')">
+            </view>
+        </view>
+        <view class="item-content">
+            <view class="fsize16 bold">紫荆公寓 2室2厅 106平</view>
+            <view class="fsize12">南 高楼层/18层</view>
+            <view class="flex-lr">
+                <view class="fsize12 f-midgray">
+                    <view>签约价格：<text class="red bold">63万</text></view>
+                </view>
+                <view class="fsize12 bold red">
+                    7200元/m²
+                </view>
+            </view>
+            <view class="fsize12 f-midgray">签约日期：2016-09-14</view>
+        </view>
+        <view class="hr-one"/>
+    </view>
+    <view class="hr"/>
+    <navigator class="group-li flex-lr section" url="/pages/selledhouse/list?id=133">
+        <view class="bold fsize16">
+            同小区成交
+        </view>
+        <view class="f-liggray">
+            >
+        </view>
+    </navigator>
+    <view class="hr-one mleft14"/>
+    <view class="twlist-item section flex-lr">
+        <view class="item-img">
+            <view class="thumb" style="background-image: url('http://apmcdn.eallcn.com/app_yun/2017-02/D19/5197/fyimg/1487467906404.jpg')">
+            </view>
+        </view>
+        <view class="item-content">
+            <view class="fsize16 bold">紫荆公寓 2室2厅 106平</view>
+            <view class="fsize12">南 高楼层/18层</view>
+            <view class="flex-lr">
+                <view class="fsize12 f-midgray">
+                    <view>签约价格：<text class="red bold">63万</text></view>
+                </view>
+                <view class="fsize12 bold red">
+                    7200元/m²
+                </view>
+            </view>
+            <view class="fsize12 f-midgray">签约日期：2016-09-14</view>
+        </view>
+        <view class="hr-one"/>
+    </view>
+    <view class="hr"/>
+    <navigator class="group-li flex-lr section" url="/pages/selledhouse/list?region=2">
+        <view class="bold fsize16">
+            同商圈相似成交
+        </view>
+        <view class="f-liggray">
+            >
+        </view>
+    </navigator>
+    <view class="hr-one mleft14"/>
+    <view class="twlist-item section flex-lr">
+        <view class="item-img">
+            <view class="thumb" style="background-image: url('http://apmcdn.eallcn.com/app_yun/2017-02/D19/5197/fyimg/1487467906404.jpg')">
+            </view>
+        </view>
+        <view class="item-content">
+            <view class="fsize16 bold">紫荆公寓 2室2厅 106平</view>
+            <view class="fsize12">南 高楼层/18层</view>
+            <view class="flex-lr">
+                <view class="fsize12 f-midgray">
+                    <view>签约价格：<text class="red bold">63万</text></view>
+                </view>
+                <view class="fsize12 bold red">
+                    7200元/m²
+                </view>
+            </view>
+            <view class="fsize12 f-midgray">签约日期：2016-09-14</view>
+        </view>
+        <view class="hr-one"/>
+    </view>
+    <view class="hr m-potscontent"/>
+    <view class="flex-ll group-li fixed-bottom" style="width: 100%">
+        <view class="flex-vc bg_orange show-btn fsize16 white" style="width: 40%;height: 100%">
+            我要卖房
+        </view>
+        <view class="flex-vc bg_blue show-btn fsize16 white" style="width: 60%;height: 100%">
+            咨询经纪人
+        </view>
+    </view>
+</view>

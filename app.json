@@ -1,6 +1,5 @@
 {
   "pages":[
-
     "pages/index/index",
     "pages/index/houselist__1",
     "pages/index/search",
@@ -11,15 +10,20 @@
     "pages/newhouse/index",
     "pages/newhouse/list",
     "pages/newhouse/show",
+    "pages/newhouse/estateinfo",
+    "pages/newhouse/housetype",
+
 
     "pages/selledhouse/list",
+    "pages/selledhouse/show",
+
 
     "pages/rentedhouse/list",
     "pages/rentedhouse/show",
 
     "pages/schoolhouse/list",
+    "pages/schoolhouse/show",
 
-    "pages/houseresource/xuequ",
     "pages/houseresource/agentcomment",
     "pages/houseresource/maparound",
     "pages/houseresource/villagedetail",

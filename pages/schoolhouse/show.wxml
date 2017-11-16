@@ -5,14 +5,14 @@
         学校名称：{{list[0].schooName}}
     </view>
     <view class="hr-one"/>
-    <view class="group-li flex-lr section">
+    <navigator class="group-li flex-lr section" url="list?school=2">
         <view >
             学区房源:<text class="fsize12">{{fangyuan.pricezuidi}}~{{fangyuan.pricezuigao}}/平，{{fangyuan.taoshu}}套</text>
         </view>
         <view class="f-liggray">
             >
         </view>
-    </view>
+    </navigator>
     <view class="hr-one"/>
     <view class="group-li flex-ll section">
         学校地址：{{list[0].address}}

@@ -13,7 +13,7 @@ Page({
       nowcity:'义乌'
   },
   onLoad: function () {
-    this.getLocation();
+    //this.getLocation();
   },
   onShow:function(){
     this.setData({

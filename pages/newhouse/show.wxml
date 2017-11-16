@@ -26,14 +26,14 @@
     </view>
     <view class="hr"/>
     <view class="section">
-        <view class="flex-lr group-li">
+        <navigator class="flex-lr group-li" url="housetype">
             <view class="flex-ll fsize16">
                 在售户型<text class="f-liggray">（2种）</text>
             </view>
             <view class="f-liggray">
                 >
             </view>
-        </view>
+        </navigator>
         <block wx:for="{{saletype}}">
             <view class="flex-lr housetype">
                 <view class="bgimg-cover" style="background-image: url('{{item.imgC}}')">
@@ -56,14 +56,14 @@
         </block>
     </view>
     <view class="hr"/>
-    <view class="flex-lr group-li section">
+    <navigator class="flex-lr group-li section" url="estateinfo">
         <view class="flex-ll fsize16">
             楼盘信息
         </view>
         <view class="f-liggray">
             >
         </view>
-    </view>
+    </navigator>
     <view class="flex-ll section group-li">
         <view class="f-liggray group-lh">
             开发商
@@ -100,7 +100,7 @@
         </view>
     </view>
     <view class="hr"/>
-    <view class="section">
+    <navigator class="section" url="../houseresource/maparound">
         <view class="flex-lr group-li">
             <view class="flex-ll fsize16">
                 位置及周边
@@ -126,7 +126,7 @@
                 35家商场超市
             </view>
         </view>
-    </view>
+    </navigator>
     <view class="hr-one"/>
     <view class="flex-ll section group-li">
         <view class="w-half flex-ll">

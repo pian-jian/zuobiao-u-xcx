@@ -51,7 +51,7 @@
 </template>
 
 <template name="qylist-item">
-<navigator class="twlist-item section flex-lr" url="">
+<navigator class="twlist-item section flex-lr" url="/pages/selledhouse/show">
     <view class="item-img">
         <view class="thumb" style="background-image: url('http://apmcdn.eallcn.com/app_yun/2017-02/D19/5197/fyimg/1487467906404.jpg')">
             <text class="yqy-tag fsize12">已签约</text>
@@ -101,7 +101,7 @@
 </template>
 
 <template name="xqflist-item">
-<navigator class="twlist-item section flex-lr" url="">
+<navigator class="twlist-item section flex-lr" url="/pages/schoolhouse/show">
     <view class="item-img">
         <view class="thumb" style="background-image: url('http://apmcdn.eallcn.com/app_yun/2017-02/D19/5197/fyimg/1487467906404.jpg')">
         </view>

@@ -1,0 +1,10 @@
+.f-signed-logo{
+    position: absolute;
+    top: 24rpx;
+    left: 24rpx;
+    width: 150rpx;
+    height: 130rpx;
+    background: url('http://m.zuobiao.wang/images/signed-logo.png') no-repeat;
+    background-size: 100%;
+    z-index: 9999;
+}
