@@ -33,10 +33,10 @@
       <view class="icon icon-54 icon-index-menu-3 bg_white"/>
       <view>租房</view>
     </navigator>
-    <view class="flex-vc">
+    <navigator class="flex-vc" url="../sellhouse/index">
       <view class="icon icon-54 icon-index-menu-4 bg_white"/>
       <view>卖房</view>
-    </view>
+    </navigator>
     <view  class="flex-vc">
         <view class="icon icon-54 icon-index-menu-5 bg_white"/>
         <view>地图找房</view>
@@ -49,10 +49,10 @@
       <view class="icon icon-54 icon-index-menu-7 bg_white"/>
       <view>学区房</view>
     </navigator>
-    <view class="flex-vc">
+    <navigator class="flex-vc" url="../service/finance">
       <view class="icon icon-54 icon-jr_03 bg_white"/>
       <view>坐标金融</view>
-    </view>
+    </navigator>
   </view>
   <view class="hr"/>
   <swiper indicator-dots="true"
@@ -77,22 +77,22 @@
     </view>
     <view class="hr-one"/>
     <view class="flex-auto index-help-type">
-      <view class="flex-vc">
+      <navigator class="flex-vc" url="../oldhouse/list">
         <view class="icon icon-30 icon-toolico_03"/>
         <view>问答</view>
-      </view>
-      <view class="flex-vc">
+      </navigator>
+      <navigator class="flex-vc" url="../oldhouse/list">
         <view class="icon icon-30 icon-toolico_05"/>
         <view>百科</view>
-      </view>
-      <view class="flex-vc">
+      </navigator>
+      <navigator class="flex-vc" url="../schoolhouse/list">
         <view class="icon icon-30 icon-toolico_07"/>
         <view>查学校</view>
-      </view>
-      <view class="flex-vc">
+      </navigator>
+      <navigator class="flex-vc" url="../selledhouse/list">
         <view class="icon icon-30 icon-toolico_09"/>
         <view>房价</view>
-      </view>
+      </navigator>
       <view class="flex-vc">
         <view class="icon icon-30 icon-toolico_11"/>
         <view>估价</view>

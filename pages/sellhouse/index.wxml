@@ -1,0 +1,43 @@
+<view class="page flex-vc">
+    <view class="section owner-text Bigtit">
+        <view class="fsize40">
+            定位坐标
+        </view>
+        <view class="fsize40 bold" style="margin-bottom: 80rpx">
+            成就更好的家
+        </view>
+        <view class="fsize20 ">
+            <text class="fsize30">9+5</text> 家门店
+        </view>
+        <view class="fsize20">
+            <text class="fsize30">500</text> 位经纪人
+        </view>
+        <view class="fsize20">
+            <text class="fsize30">800</text> 次看房客/天
+        </view>
+    </view>
+    <view class="section flex-vc optgroup bntBox">
+        <view class="flex-lr mbottom30 section">
+            <view class="btnw45 bg_white fsize16 flex-cc">
+                我要估价
+            </view>
+            <view class="btnw45 bg_blue white flex-cc fsize16">
+                发布房源
+            </view>
+        </view>
+        <view class="btnw90 bg_black white flex-cc fsize16 white mbottom14">
+            <view class="icon icon-18 icon-viewmyhouse mright10"/>  查看我的在售房子
+        </view>
+        <view class="section flex-lr fsize12 white">
+            <view>
+                卖房有问题 联系客服
+            </view>
+            <view class="flex-rr">
+                <view class="icon icon-13 icon-tell mright10"/>
+                4000-669-000
+            </view>
+        </view>
+
+    </view>
+
+</view>

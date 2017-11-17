@@ -1,0 +1,130 @@
+<view class="page">
+    <swiper
+        vertical="true" indicator-dots="true" indicator-color="#d5d5d5" indicator-active-color="#1273e1">
+        <swiper-item class="swiper-item1 darkblue">
+            <view class="section textCont fadeInTop">
+                <view class="fsize20 bold flex-cc mbottom14" style="margin-top: 80rpx">
+                    房款安全就用坐标资金监管
+                </view>
+                <view class="fsize30 bold flex-vc mtop14 mbottom14" style="text-align: center">
+                    别再为钱苦恼，找“坐标”就对了
+                </view>
+                <view class="fsize18 flex-cc mtop14">
+                    为什么选择坐标金融？
+                </view>
+                <view class="fsize18 flex-cc">
+                    真实房产交易+全流程把控+资金监管
+                </view>
+                <view class=" fsize18 flex-cc mtop14">
+                    服务热线4000-669-0000
+                </view>
+            </view>
+        </swiper-item>
+        <swiper-item class="swiper-item2 bg-grey">
+            <view class="content div-v-center">
+                <swiper  indicator-dots="true" autoplay="true" indicator-dots="true" indicator-color="#d5d5d5" indicator-active-color="#1273e1">
+                    <block wx:for="{{swiperlist2}}">
+                        <swiper-item>
+                            <view class="flex-vc bg_white ptop14 pbottom14">
+                                <view class="section flex-cc">
+                                    <image src="{{item.img}}"/>
+                                </view>
+                                <view class="hr-one section mtop14 mbottom14"/>
+                                <view class="section darkblue bold flex-cc fsize16 mbottom14">
+                                    {{item.tittle}}
+                                </view>
+                                <view class="section flex-cc f-midgray">
+                                    {{item.desc}}
+                                </view>
+                            </view>
+                        </swiper-item>
+                    </block>
+                </swiper>
+            </view>
+        </swiper-item>
+        <swiper-item class="swiper-item3">
+            <view class="content div-v-center">
+                <block wx:for="{{swiperlist3}}">
+                    <view class="flex-cc mright10 mtop14 mbottom14">
+                        <view class="group-title">
+                            <image src="{{item.img}}"/>
+                        </view>
+                        <view class="flex-vc mleft14" style="width: 50%;margin-top: 60rpx">
+                            <view class="fsize16 bold mbottom10">{{item.tittle}}</view>
+                            <view class="f-darkgray">{{item.desc}}</view>
+                        </view>
+                    </view>
+                </block>
+            </view>
+        </swiper-item>
+        <swiper-item>
+            <view class="swiper-item4 bgimg-cover">
+                <view class="content div-v-center flex-vc section">
+                <block wx:for="{{swiperlist4}}">
+                    <view class="group-item flex-vc white mbottom14">
+                        <image src="{{item.icon}}"/>
+                        <view class="fsize18 bold mbottom10 mtop10">
+                            {{item.num}}
+                        </view>
+                        <view>{{item.desc}}</view>
+                    </view>
+                </block>
+            </view>
+            </view>
+        </swiper-item>
+        <swiper-item class="swiper-item5">
+            <view class="section flex-vc">
+                <view class="fsize30 bold f-darkgray" style="margin-top: 60rpx">
+                    安全保障
+                </view>
+                <view class="flex-cc white bg_blue btnw50 mtop14">
+                    了解详情 <view class="icon icon-18 icon-data-21"/>
+                </view>
+                <view class="flex-auto">
+                    <block wx:for="{{swiperlist5}}">
+                        <view class="w-half flex-vc" style="margin-top: 80rpx">
+                            <image src="{{item.img}}"/>
+                            <view class="mtop14 mbottom10 section flex-cc">{{item.desc1}}</view>
+                            <view class="section flex-cc">{{item.desc2}}</view>
+                        </view>
+                    </block>
+                </view>
+            </view>
+        </swiper-item>
+        <swiper-item class="swiper-item6">
+            <view class="content div-v-center">
+                <swiper  indicator-dots="true" autoplay="true" indicator-dots="true" indicator-color="#d5d5d5" indicator-active-color="white">
+                    <block wx:for="{{swiperlist6}}">
+                        <swiper-item>
+                            <view class="flex-vc ptop14 pbottom14">
+                                <view class="section flex-cc">
+                                    <image src="{{item.img}}"/>
+                                </view>
+                                <view class="section white bold flex-ll fsize16 mtop14 mbottom14">
+                                    {{item.tittle}}
+                                </view>
+                                <view class="section flex-cc white">
+                                    {{item.desc}}
+                                </view>
+                            </view>
+                        </swiper-item>
+                    </block>
+                </swiper>
+            </view>
+        </swiper-item>
+        <swiper-item class="swiper-item7 bg-grey">
+            <view class="section flex-vc">
+                <view class="fsize30 bold f-darkgray" style="margin-top: 60rpx">
+                    安全保障
+                </view>
+                <view class="flex-auto">
+                    <block wx:for="{{swiperlist7}}">
+                        <view class="w-half flex-vc" style="margin-top: 30rpx">
+                            <image style="{{index>11?'height:228rpx':''}}" src="{{item}}"/>
+                        </view>
+                    </block>
+                </view>
+            </view>
+        </swiper-item>
+    </swiper>
+</view>

@@ -13,6 +13,8 @@
     "pages/newhouse/estateinfo",
     "pages/newhouse/housetype",
 
+    "pages/sellhouse/index",
+
 
     "pages/selledhouse/list",
     "pages/selledhouse/show",
@@ -42,6 +44,7 @@
     "pages/seehouse/index",
 
     "pages/service/index",
+    "pages/service/finance",
 
     "pages/logs/logs"
   ],

@@ -158,4 +158,14 @@
   background-image: url('http://m.zuobiao.wang/images/telss.png');
 }
 
+.icon-viewmyhouse{
+  background-image: url('http://m.zuobiao.wang/images/viewMyHouse.jpg');
+}
+.icon-tell{
+  background-image: url('http://m.zuobiao.wang/images/tell.png');
+}
+.icon-data-21{
+  background-image: url('http://m.zuobiao.wang/fuwu/jinrong/images/data_21.png');
+}
+
 

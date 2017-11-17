@@ -40,6 +40,9 @@ page,.page {
 .blue{
     color: #10AEFF;
 }
+.darkblue{
+    color:#1273e1;
+}
 .yellow{
     color: #FFBE00;
 }
@@ -104,11 +107,15 @@ page,.page {
 .bg-grey {
     background-color: #f4f4f4;
 }
+
 .bg_graynew{
     background-color: #474749;
 }
 .bg_deepgray{
     background-color: #c5c5c5;
+}
+.bg_black{
+    background-color: rgba(0,0,0,.8);
 }
 .bg_white{
     background-color: white;
@@ -144,16 +151,22 @@ page,.page {
     margin-top: 5rpx;
 }
 .mtop10{
-    margin-top: 10rpx;
+    margin-top: 20rpx;
 }
 .mtop14{
     margin-top: 28rpx;
 }
 .mbottom10{
-    margin-bottom: 10rpx;
+    margin-bottom: 20rpx;
 }
-.pbottom13{
-    padding-bottom:13rpx;
+.pbottom14{
+    padding-bottom:28rpx;
+}
+.ptop14{
+    padding-top:28rpx;
+}
+.m14{
+    margin: 28rpx;
 }
 .mtop16{
     margin-top: 16rpx;
@@ -163,6 +176,9 @@ page,.page {
 }
 .mbottom16{
     margin-bottom: 16rpx;
+}
+.mbottom30{
+    margin-bottom: 60rpx;
 }
 .mleft14{
     margin-left:14rpx;
@@ -210,6 +226,14 @@ page,.page {
 }
 .fsize20{
     font-size: 40rpx;
+}
+.fsize30{
+    font-size: 60rpx;
+    line-height: 65rpx;
+}
+.fsize40{
+    font-size: 80rpx;
+    line-height: 90rpx;
 }
 .fweight700{
     font-weight:700;
@@ -438,6 +462,16 @@ page,.page {
     margin:6rpx;
     white-space: nowrap;
     height: 40rpx;
+}
+.btnw90{
+    width: 90%;
+    height: 80rpx;
+    line-height: 80rpx;
+}
+.btnw50{
+    width: 50%;
+    height: 80rpx;
+    line-height: 80rpx;
 }
 .btnw45{
     width: 45%;

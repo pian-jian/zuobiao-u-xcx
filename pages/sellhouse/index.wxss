@@ -1,0 +1,51 @@
+.page{
+    background: url('http://m.zuobiao.wang/images/home-bg2_01.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.owner-text{
+    position: absolute;
+    top:80rpx;
+    left: 0;
+}
+.optgroup{
+    position: absolute;
+    bottom:80rpx;
+    left: 0;
+}
+.Bigtit{
+    animation:Bigtit 0.5s ease-in-out 0s 1 both;
+    -webkit-animation:Bigtit  0.5s ease-in-out 0s 1 both;
+}
+@keyframes Bigtit{
+    0%{
+        transform:translate(0,-100px);
+        -webkit-transform:translate(0,-100px);
+        opacity:0;
+    }
+    100%{
+        transform:translate(0,0);
+        -webkit-transform:translate(0,0);
+        opacity:1;
+    }
+}
+.bntBox{
+    animation:bntBox 0.8s ease-in-out  1 both;
+    -webkit-animation:bntBox 0.5s ease-in-out  1 both;
+}
+@keyframes bntBox{
+    0%{
+        transform:translate(0,500px);
+        -webkit--transform:translate(0,500px);
+        opacity:0;
+    }
+    100%{
+        transform:translate(0,0);
+        -webkit-transform:translate(0,0);
+        opacity:1;
+    }
+}
+
