@@ -1,0 +1,59 @@
+<view class="page">
+    <view class="flex-lr ptop14 pbottom14 white bg_blue">
+        <view class="w-half flex-vc">
+            <view class="bold">{{list.length}}</view>
+            <view>评论数</view>
+        </view>
+        <view class="w-half flex-vc">
+            <view class="bold">{{avg}}%</view>
+            <view>好评率</view>
+        </view>
+    </view>
+    <view class="flex-lr group-li section">
+        <view class="w-half flex-cc">服务态度
+            <block wx:for="{{[1,2,3,4,5]}}">
+                <view class="icon icon-13 icon-star mleft14"/>
+            </block>
+        </view>
+        <view class="w-half borderleft flex-cc">专业技能
+            <block wx:for="{{[1,2,3,4,5]}}">
+                <view class="icon icon-13 icon-star mleft14"/>
+            </block>
+        </view>
+    </view>
+    <view class="hr-one"/>
+    <view class="section">
+        <block wx:for="{{list}}">
+            <view class="flex-lr mtop14 mbottom14">
+                <view class="avatar group-lh">
+                    <image src="http://static1.ljcdn.com/m/images/default/default_user.jpg?_v=20160421192100"/>
+                </view>
+                <view class="group-lb">
+                    <view class="flex-ll">
+                        186****8269 <text class="f-midgray mleft14">买房人</text>
+                    </view>
+                    <view class="flex-ll">
+                        <view class="w-half flex-ll">服务态度
+                            <block wx:for="{{[1,2,3,4,5]}}">
+                                <view class="icon icon-13 icon-star"/>
+                            </block>
+                        </view>
+                        <view class="w-half flex-ll">专业技能
+                            <block wx:for="{{[1,2,3,4,5]}}">
+                                <view class="icon icon-13 icon-star"/>
+                            </block>
+                        </view>
+                    </view>
+                    <view>{{item.commentC}}</view>
+                    <view class="flex-lr f-midgray">
+                        <view>带看</view>
+                        <view>{{item.dateC}}</view>
+                    </view>
+                </view>
+
+            </view>
+            <view wx:if="{{index<list.length-1}}" class="hr-one"/>
+        </block>
+    </view>
+    <view class="hr"/>
+</view>

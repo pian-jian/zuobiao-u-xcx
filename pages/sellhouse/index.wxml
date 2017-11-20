@@ -1,18 +1,18 @@
 <view class="page flex-vc">
     <view class="section owner-text Bigtit">
-        <view class="fsize40">
+        <view class="fsize40  flex-ll">
             定位坐标
         </view>
-        <view class="fsize40 bold" style="margin-bottom: 80rpx">
+        <view class="fsize40 bold  flex-ll" style="margin-bottom: 80rpx">
             成就更好的家
         </view>
-        <view class="fsize20 ">
-            <text class="fsize30">9+5</text> 家门店
+        <view class="fsize20 flex-ll">
+            <view class="fsize30">9+5</view> 家门店
         </view>
-        <view class="fsize20">
+        <view class="fsize20 flex-ll">
             <text class="fsize30">500</text> 位经纪人
         </view>
-        <view class="fsize20">
+        <view class="fsize20 flex-ll">
             <text class="fsize30">800</text> 次看房客/天
         </view>
     </view>

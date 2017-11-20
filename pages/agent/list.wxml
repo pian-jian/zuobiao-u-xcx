@@ -1,0 +1,74 @@
+<view class="page">
+    <view class="section flex-lr group-li tabs-title">
+        <view class="picker-li flex-cc {{valueObj.region>0?'blue':''}}" bindtap="showTypeView" data-tab-type="region" hidden="{{thregionhide}}">
+            区域▼
+        </view>
+        <view class="picker-li flex-cc {{valueObj.filter.length>1||valueObj.filter>0?'blue':''}}" catchtap="showTypeView" data-tab-type="filter" hidden="{{thfilterhide}}">
+            筛选▼
+        </view>
+        <view class="picker-li flex-cc {{valueObj.order>0?'blue':''}}" catchtap="showTypeView" data-tab-type="order" hidden="{{thorderhide}}">
+            排序▼
+        </view>
+    </view>
+    <view class="hr-one"/>
+    <view class="modal-type" hidden="{{modalHide}}">
+        <view class="content">
+            <view class="section flex-lr group-li tabs-title">
+                <view class="picker-li flex-cc {{valueObj.region>0?'blue':''}}" bindtap="showTypeView" data-tab-type="region" hidden="{{thregionhide}}">
+                    区域▼
+                </view>
+                <view class="picker-li flex-cc {{valueObj.filter.lenght>0||valueObj.filter>0?'blue':''}}" catchtap="showTypeView" data-tab-type="filter" hidden="{{thfilterhide}}">
+                    筛选▼
+                </view>
+                <view class="picker-li flex-cc {{valueObj.order>0?'blue':''}}" catchtap="showTypeView" data-tab-type="order" hidden="{{thorderhide}}">
+                    排序▼
+                </view>
+            </view>
+            <view class="hr-one"/>
+            <view class="tabs-body" hidden="{{tbhide}}">
+                <block wx:for="{{multiObj[nvalue]}}">
+                    <view class="flex-ll type-item {{item.isselect>0?'blue':''}}"
+                          data-tab-type="{{nvalue}}"
+                          data-tag-item-id="{{item.id}}"
+                          data-tag-item-text="{{item.text}}"
+                          bindtap="setTypeItem">
+                        {{item.text}}
+                    </view>
+                    <view class="hr-one"/>
+                </block>
+                <view wx:if="{{nvalue=='filter'}}" class="flex-vc bg_blue section show-btn fsize16 white mtop14" bindtap="setFilterType">
+                    确定
+                </view>
+
+            </view>
+        </view>
+    </view>
+    <scroll-view scroll-y style="height: {{scrollHeight}}px;">
+        <block wx:for="{{list}}">
+            <navigator class="flex-ll mbottom14 mtop14" url="show">
+                <view class="avatar mright10">
+                    <image src="{{item.photo}}"/>
+                </view>
+                <view class="agentinfo">
+                    <view>
+                        <text class="fsize18 bold">{{item.username}} </text><text class="blue">{{item.zhicheng}}</text>
+                    </view>
+                    <view class="f-midgray">
+                        {{item.dianName}}
+                    </view>
+                    <view class="f-midgray">
+                        好评率：<text class="red">{{item.haoping}}%</text>  <text class="red"> {{item.tiaoshu}}</text>人评价
+                    </view>
+                    <view class="flex-auto">
+                        <view class="item-tag1">客户热评</view>
+                        <view class="item-tag2">销售达人</view>
+                        <view class="item-tag1">带看活跃</view>
+                        <view class="item-tag2">学区专家</view>
+                        <view class="item-tag1">法律专家</view>
+                    </view>
+                </view>
+            </navigator>
+            <view class="hr-one"/>
+        </block>
+    </scroll-view>
+</view>

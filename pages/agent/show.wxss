@@ -1,0 +1,6 @@
+.banner{
+    background-color: rgb(18, 115, 225);
+}
+.banner .numinfo{
+    background-color: rgba(0, 0, 0,.1);
+}

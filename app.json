@@ -1,8 +1,15 @@
 {
   "pages":[
+
     "pages/index/index",
     "pages/index/houselist__1",
     "pages/index/search",
+
+    "pages/agent/list",
+    "pages/agent/show",
+    "pages/agent/houselist",
+    "pages/agent/commentlist",
+
 
     "pages/oldhouse/list",
     "pages/oldhouse/show",

@@ -1,0 +1,86 @@
+<import  src="../template/twlist-item.wxml"/>
+<view class="page">
+    <view class="banner ptop14 white">
+        <view class="flex-lr">
+            <view class="flex-ll">
+                <view class="avatar mleft14 mright14">
+                    <image src="{{list[0].photo}}"/>
+                </view>
+                <view >
+                    <view>
+                        <text class="fsize18 bold">{{list[0].username}}</text> <text class="mleft14">{{list[0].zhicheng}}</text>
+                    </view>
+                    <view class="fsize12 f-liggray mtop14">
+                        所属门店：{{list[0].dianName}}
+                    </view>
+                </view>
+            </view>
+            <view class="bold white mright14">
+                <view>{{list[0].haopingNum}}%</view>
+                <view>好评率</view>
+            </view>
+        </view>
+        <view class="numinfo flex-lr mtop14 ptop14 pbottom14">
+            <view class="flex-vc" style="width: 30%">
+                <view class="bold">
+                    {{list[0].chengjiaoNum}}
+                </view>
+                <view>最近成交(套)</view>
+            </view>
+            <view class="flex-vc borderleft" style="width: 30%">
+                <view class="bold">
+                    {{list[0].tianshu/list[0].chengjiaoNum}}
+                </view>
+                <view>最近成交(套)</view>
+            </view>
+            <view class="flex-vc borderleft" style="width: 30%">
+                <view class="bold">
+                    {{list[0].kanfangNum}}
+                </view>
+                <view>近30天带看(次)</view>
+            </view>
+        </view>
+    </view>
+    <view class="flex-auto section mtop14 mbottom14">
+        <view class="item-tag1">房东信赖</view>
+        <view class="item-tag2">销售达人</view>
+        <view class="item-tag1">业绩冠军</view>
+    </view>
+    <view class="hr"/>
+    <navigator class="section flex-lr group-li" url="commentlist">
+        <view>
+            <text class="bold">用户评价</text><text class="fsize12">({{list[0].pingjiaNum}}条评论)</text>
+        </view>
+        <view class="f-liggray">
+            >
+        </view>
+    </navigator>
+    <view class="hr"/>
+    <navigator class="section flex-lr group-li" url="houselist?type=selled">
+        <view class="bold">
+            TA的成交房源
+        </view>
+        <view class="f-liggray">
+            >
+        </view>
+    </navigator>
+    <block wx:for="{{chengjiaoInfo}}">
+        <template is="qylist-item" data="{{list}}"/>
+    </block>
+    <view class="hr"/>
+    <navigator class="section flex-lr group-li" url="houselist?type=selling">
+        <view class="bold">
+            TA的在售房源
+        </view>
+        <view class="f-liggray">
+            >
+        </view>
+    </navigator>
+    <block wx:for="{{zaishouInfo}}">
+        <template is="esflist-item" data="{{list}}"/>
+    </block>
+    <view class="hr m-potscontent"/>
+    <view class="flex-cc group-li bg_blue fixed-bottom white" style="width: 100%">
+        <view class="icon icon-18 icon-spirit-new-tel mright10"/>  电话咨询
+    </view>
+</view>

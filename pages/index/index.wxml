@@ -97,10 +97,10 @@
         <view class="icon icon-30 icon-toolico_11"/>
         <view>估价</view>
       </view>
-      <view class="flex-vc">
+      <navigator class="flex-vc" url="../agent/list">
         <view class="icon icon-30 icon-toolico_13"/>
         <view>经纪人</view>
-      </view>
+      </navigator>
       <view class="flex-vc">
         <view class="icon icon-30 icon-toolico_15"/>
         <view>坐标云算</view>

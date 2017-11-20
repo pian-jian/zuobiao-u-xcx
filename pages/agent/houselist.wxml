@@ -1,0 +1,6 @@
+<import  src="../template/twlist-item.wxml"/>
+<scroll-view scroll-y style="height: {{scrollHeight}}px;">
+    <block wx:for="{{list}}">
+        <template is="{{opt.type=='selled'?'qylist-item':'esflist-item'}}" data="{{list}}"/>
+    </block>
+</scroll-view>

@@ -32,8 +32,8 @@
 				{
 					"id": 1,
 					"name": "houselist",
-					"pathName": "pages/index/volume",
-					"query": "spec=2&price=3"
+					"pathName": "pages/agent/show",
+					"query": ""
 				}
 			]
 		}

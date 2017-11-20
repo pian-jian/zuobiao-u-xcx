@@ -1,0 +1,50 @@
+var util = require('../../utils/util.js')
+
+Page({
+    data: {
+        list:[{
+            businesslife:"",
+            chengjiaoNum:"2",
+            dianName:"贝村一店",
+            haopingNum:"100",
+            id:"191",
+            kanfangNum:"43",
+            photo:"http://www.zuobiao.wang/uploadFile/userManager/131494241760585000.png",
+            pingjiaNum:"4",
+            shop:"1",
+            tel:"4000669000转506",
+            tianshu:"50",
+            userPhone:"18257886467",
+            username:"刘俊微",
+            zhicheng:"经纪人"
+        }],
+        chengjiaoInfo:[{
+            adminid:"191",
+            cheku:"20",
+            communityname:"万商华府",
+            dateC:"2016-07-26",
+            direction:"南北",
+            housearea:"154",
+            housefloors:"中楼层",
+            houseid:"2255",
+            housepic:"http://apmcdn.eallcn.com/app_yun/2016-07/D16/51/fyimg/1468678209222.jpg",
+            housetypes:"3室2厅",
+            priceC:"115",
+            stateC:"2"
+        }],
+        zaishouInfo:[{
+            cheku:"5",
+            communityname:"建设二村",
+            direction:"南北",
+            havekey:"",
+            housearea:"370",
+            housefloors:"低楼层",
+            houseid:"68983",
+            housepic:"",
+            housetypes:"8室8厅",
+            isschool:"学区房",
+            minashui:"满两年",
+            priceC:"720"
+        }],
+    }
+})

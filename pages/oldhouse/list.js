@@ -82,15 +82,26 @@ Page({
         var that=this;
         util.setBarTitle("二手房")
         if(opt){
+            console.log(opt);
             var n_multiObj=this.data.multiObj;
             for (var i in opt){
-                console.log(i);
-                n_multiObj[i].map(function(r,n){
-                    if(r.id==opt[i]){
-                        r.isselect=1;
-                    }
-                    return r;
-                })
+                if(i=='tags'){
+                    opt[i].split(',').map(function(r,n){
+                        n_multiObj[i].map(function(c,m){
+                            if(r==c.id){
+                                c.isselect=1;
+                            }
+                            return c;
+                        })
+                    })
+                }else {
+                    n_multiObj[i].map(function (r, n) {
+                        if (r.id == opt[i]) {
+                            r.isselect = 1;
+                        }
+                        return r;
+                    })
+                }
             }
             this.setData({
                 valueObj:opt,

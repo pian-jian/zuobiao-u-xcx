@@ -167,5 +167,13 @@
 .icon-data-21{
   background-image: url('http://m.zuobiao.wang/fuwu/jinrong/images/data_21.png');
 }
+.icon-spirit-new-tel{
+   background-image: url('http://m.zuobiao.wang/images/spirit-new_tel.png');
+ }
+.icon-star{
+  background-image: url('http://m.zuobiao.wang/images/star.png');
+}
+
+
 
 
