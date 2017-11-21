@@ -3,7 +3,8 @@
     <form bindsubmit="formSubmit">
         <view class="flex-lr section group-li">
             <view class="group-lh">小区名称</view>
-            <input class="group-lb flex-rr" name="name" disabled="disabled" type="text" value="{{infoobj.name}}"/>
+            <view class="group-lb flex-rr">{{infoobj.name}}</view>
+            <!--<input class="group-lb flex-rr" name="name" disabled="disabled" type="text" value="{{infoobj.name}}"/>-->
         </view>
         <view class="hr"/>
         <view class="section">

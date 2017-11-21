@@ -74,6 +74,7 @@ Page({
             directionarray:directionarray,
             agearray:agearray
         })
+        console.log(this.data.infoobj)
     },
     inputArea:function (e) {
         console.log(e.detail.value);

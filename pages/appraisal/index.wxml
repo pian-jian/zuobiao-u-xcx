@@ -1,13 +1,13 @@
 <view class="page bgimg-cover" hidden="{{!modalhide}}">
-    <view class="section flex-vc content white div-v-center">
-        <view class="fsize18 bold">
+    <view class="section flex-vc content div-v-center">
+        <view class="fsize18 bold white">
             我的房子值多少钱
         </view>
-        <view class="section bg_white group-li flex-cc" style="margin-top: 60rpx">
-            <input class="f-darkgray" type="text" placeholder="输入要估价的小区名称" bindinput="inputName" value="{{housename}}"/>
+        <view class="section bg_white group-li flex-cc f-darkgray" style="margin-top: 60rpx">
+            <input style="color:black" type="text" placeholder="输入要估价的小区名称" bindinput="inputName" value="{{housename}}"/>
         </view>
         <button class="bg_blue section white mtop10" bindtap="goInfoPage">去估价</button>
-        <view class="fsize12" style="margin-top: 200rpx" bindtap="showModal">坐标是如何做到估价准确性的？</view>
+        <view class="fsize12 white" style="margin-top: 200rpx" bindtap="showModal">坐标是如何做到估价准确性的？</view>
     </view>
 </view>
 <view class="instmodal flex-cc" hidden="{{modalhide}}">

@@ -23,7 +23,8 @@ Page({
     goInfoPage:function(){
         var textname=this.data.housename
         if(textname){
-            wx.navigateTo({
+            console.log(textname);
+           wx.navigateTo({
                 url: 'info?text='+textname
             })
         }else{
