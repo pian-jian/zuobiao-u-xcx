@@ -1,0 +1,57 @@
+<import src="../template/twlist-item.wxml"/>
+<view class="page">
+    <view class="banner">
+        <view class="flex-lr section content">
+            <view class="flex-vc w-half">
+                <view class="flex-cc">
+                   <view class="fsize40">149</view>
+                    <view>万</view>
+                </view>
+                <view class="f-midgray">
+                    总价.环比涨1%
+                </view>
+            </view>
+            <view class="flex-vc w-half">
+                <view class="flex-cc">
+                    <view class="fsize40">{{detail[0].junjia2}}</view>
+                    <view>元/平</view>
+                </view>
+                <view class="f-midgray">
+                    均价.环比涨1%
+                </view>
+            </view>
+        </view>
+    </view>
+    <canvas class="section" canvas-id="price-chart">
+    </canvas>
+    <view class="hr"/>
+    <view class="group-li section fsize16 flex-ll">
+        小区价格走势
+    </view>
+    <view class="hr-one"/>
+    <canvas class="section" canvas-id="price-chart2">
+    </canvas>
+    <view class="hr"/>
+    <view class="group-li section fsize16 flex-ll">
+        小区成交与在售明细
+    </view>
+    <view class="hr-one"/>
+    <view class="group-li flex-lr">
+        <view class="flex-cc w-half group-li f-midgray {{tab==0?'tab-active':''}}" data-tabindex="0" bindtap="tabChange">
+            成交明细
+        </view>
+        <view class="flex-cc w-half group-li f-midgray {{tab==1?'tab-active':''}}" data-tabindex="1" bindtap="tabChange">
+            在售明细
+        </view>
+    </view>
+    <view class="hr-one"/>
+    <block wx:for="{{chengjiaolist}}">
+        <template is="{{tab==0?'qylist-item':'esflist-item'}}" data="{{list}}"/>
+    </block>
+    <view class="hr-one"/>
+    <navigator class="fsize16 group-li flex-cc" url="{{tab==0?'../selledhouse/list':'../oldhouse/list'}}">
+        查看更多
+    </navigator>
+    <view class="hr"/>
+    <button class="bg_blue flex-cc white">我要卖房</button>
+</view>

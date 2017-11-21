@@ -1,0 +1,42 @@
+<view class="page bgimg-cover" hidden="{{!modalhide}}">
+    <view class="section flex-vc content white div-v-center">
+        <view class="fsize18 bold">
+            我的房子值多少钱
+        </view>
+        <view class="section bg_white group-li flex-cc" style="margin-top: 60rpx">
+            <input class="f-darkgray" type="text" placeholder="输入要估价的小区名称" bindinput="inputName" value="{{housename}}"/>
+        </view>
+        <button class="bg_blue section white mtop10" bindtap="goInfoPage">去估价</button>
+        <view class="fsize12" style="margin-top: 200rpx" bindtap="showModal">坐标是如何做到估价准确性的？</view>
+    </view>
+</view>
+<view class="instmodal flex-cc" hidden="{{modalhide}}">
+    <view style="margin: 0 80rpx">
+        <view class="fsize20 flex-cc">
+            关于坐标估价
+        </view>
+        <view class="hr-xian" style="margin: 60rpx auto"/>
+        <view class="bold mbottom10">
+            1.真实的成交数据
+        </view>
+        <view class="mbottom14">
+            基于坐标完整的真实成交数据，保证价格预测的准备性。
+        </view>
+        <view class="bold mbottom10">
+            2.在售房源数据
+        </view>
+        <view class="mbottom14">
+            基于坐标海量的在售房源数据，我们可以知道目前房源市场价，从而预测更为精准的价格。
+        </view>
+        <view class="bold mbottom10">
+            3.基础楼盘数据库
+        </view>
+        <view class="mbottom14">
+            基础的楼盘数据是保证坐标真房源的基础，也是所有估价准确的基础。
+        </view>
+
+        <view class="flex-cc">
+            <image class="closebtn" bindtap="hideModal" src="../../imgs/close-empty .png"/>
+        </view>
+    </view>
+</view>

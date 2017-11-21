@@ -5,10 +5,18 @@
     "pages/index/houselist__1",
     "pages/index/search",
 
+
+
     "pages/agent/list",
     "pages/agent/show",
     "pages/agent/houselist",
     "pages/agent/commentlist",
+
+    "pages/appraisal/index",
+    "pages/appraisal/info",
+    "pages/appraisal/show",
+
+
 
 
     "pages/oldhouse/list",

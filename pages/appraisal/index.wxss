@@ -1,0 +1,24 @@
+.page{
+    background-image: url("http://m.zuobiao.wang/images/home-bg2_01s.jpg");
+    position: relative;
+}
+.content{
+    position: absolute;
+    top: 50%;
+}
+.content .bg_white{
+    border-radius: 10rpx;
+}
+.instmodal{
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: #fff;
+    z-index: 200;
+}
+.closebtn{
+    width: 60rpx;
+    height: 60rpx;
+    margin-top: 80rpx;
+}

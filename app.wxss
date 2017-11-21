@@ -169,7 +169,7 @@ page,.page {
     margin: 28rpx;
 }
 .mtop16{
-    margin-top: 16rpx;
+    margin-top: 32rpx;
 }
 .mbottom14{
     margin-bottom: 28rpx;

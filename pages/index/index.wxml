@@ -93,10 +93,10 @@
         <view class="icon icon-30 icon-toolico_09"/>
         <view>房价</view>
       </navigator>
-      <view class="flex-vc">
+      <navigator class="flex-vc" url="../appraisal/index">
         <view class="icon icon-30 icon-toolico_11"/>
         <view>估价</view>
-      </view>
+      </navigator>
       <navigator class="flex-vc" url="../agent/list">
         <view class="icon icon-30 icon-toolico_13"/>
         <view>经纪人</view>

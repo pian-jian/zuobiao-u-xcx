@@ -1,0 +1,14 @@
+.group-item{
+    background-color: #f3f3f3;
+    padding: 10rpx 20rpx;
+    margin: 0 20rpx 20rpx 0;
+}
+.item-active{
+    background-color: #999;
+}
+input{
+    text-align: right;
+}
+.item-tag-grayline{
+    border-radius: 2rpx;
+}

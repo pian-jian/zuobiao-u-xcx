@@ -94,6 +94,14 @@ module.exports = {
         wx.setNavigationBarTitle({
             title: t
         })
+    },
+    //toast提示
+    toast:function(val){
+        wx.showToast({
+            title: val,
+            icon: 'fail',
+            duration: 2000
+        })
     }
 
 }

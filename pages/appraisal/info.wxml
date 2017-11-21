@@ -1,0 +1,74 @@
+<view class="page">
+    <view class="hr"/>
+    <form bindsubmit="formSubmit">
+        <view class="flex-lr section group-li">
+            <view class="group-lh">小区名称</view>
+            <input class="group-lb flex-rr" name="name" disabled="disabled" type="text" value="{{infoobj.name}}"/>
+        </view>
+        <view class="hr"/>
+        <view class="section">
+            <view class="group-li flex-lr">
+                <view class="group-lh">面积</view>
+                <view class="group-lb flex-rr">
+                    <input type="digit" name="area" style="text-align: right" placeholder="请输入大于0的数字" bindinput="inputArea" value="{{infoobj.area}}"/>
+                    <text class="item-tag-grayline">平方米</text>
+                </view>
+            </view>
+            <view class="hr-one"/>
+            <view class="group-li flex-lr">
+                <view class="group-lh">户型</view>
+                <picker class="group-lb flex-rr" name="type" bindchange="typeChange" value="{{typeindex}}" range="{{typearray}}">
+                    <view class="picker">
+                        {{typeobj[typeindex].id>0?typearray[typeindex]:"请选择"}}
+                    </view>
+                </picker>
+            </view>
+            <view class="hr-one"/>
+            <view class="group-li flex-lr">
+                <view class="group-lh">朝向</view>
+                <picker class="group-lb flex-rr" name="direction" bindchange="directionChange" value="{{directionindex}}" range="{{directionarray}}">
+                    <view class="picker">
+                        {{directionobj[directionindex].id>0?directionarray[directionindex]:"请选择"}}
+                    </view>
+                </picker>
+            </view>
+            <view class="hr-one"/>
+            <view class="group-li flex-lr">
+                <view class="group-lh">楼层</view>
+                <view class="group-lb flex-lr">
+                    <input type="number" name="floor" placeholder="请输入"/>
+                    <text class="item-tag-grayline">层</text>
+                    <input type="number" name="allfloor" placeholder="请输入"/>
+                    <text class="item-tag-grayline">总层数</text>
+                </view>
+            </view>
+            <view class="hr-one"/>
+            <view class="group-li flex-lr">
+                <view class="group-lh">建筑年代</view>
+                <picker class="group-lb flex-rr" name="age" value="{{ageindex}}" range="{{agearray}}" bindchange="ageChange">
+                    <view class="picker">
+                        {{ageindex?agearray[ageindex]:"请选择"}}
+                    </view>
+                </picker>
+            </view>
+        </view>
+        <view class="hr"/>
+        <view class="flex-ll section group-li">
+            <text>房源特色</text>
+            <text class="fsize12 f-midgray">(选填)</text>
+        </view>
+        <view class="flex-auto section group-li">
+            <block wx:for="{{tags}}">
+                <view class="group-item flex-cc {{item.isselect>0?'item-active':''}}" data-tagid="{{item.id}}" bindtap="setTags">
+                    {{item.name}}
+                </view>
+            </block>
+        </view>
+        <button class="bg_blue section flex-cc white mtop16" formType="submit">查看估价</button>
+    </form>
+
+
+
+
+
+</view>

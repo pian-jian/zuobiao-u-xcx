@@ -32,8 +32,8 @@
 				{
 					"id": 1,
 					"name": "houselist",
-					"pathName": "pages/agent/show",
-					"query": ""
+					"pathName": "pages/appraisal/show",
+					"query": "text=ww"
 				}
 			]
 		}
