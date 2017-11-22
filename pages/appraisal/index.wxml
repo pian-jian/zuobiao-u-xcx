@@ -10,7 +10,7 @@
         <view class="fsize12 white" style="margin-top: 200rpx" bindtap="showModal">坐标是如何做到估价准确性的？</view>
     </view>
 </view>
-<view class="instmodal flex-cc" hidden="{{modalhide}}">
+<view class="instmodal flex-cc" hidden="{{modalhide}}" bindtap="hideModal">
     <view style="margin: 0 80rpx">
         <view class="fsize20 flex-cc">
             关于坐标估价

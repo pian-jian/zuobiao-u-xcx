@@ -37,10 +37,11 @@
       <view class="icon icon-54 icon-index-menu-4 bg_white"/>
       <view>卖房</view>
     </navigator>
-    <view  class="flex-vc">
+
+    <navigator  class="flex-vc" url="../map/maphouse">
         <view class="icon icon-54 icon-index-menu-5 bg_white"/>
         <view>地图找房</view>
-    </view>
+    </navigator>
     <navigator class="flex-vc" url="../selledhouse/list">
       <view class="icon icon-54 icon-index-menu-6 bg_white"/>
       <view>查成交</view>
@@ -101,10 +102,10 @@
         <view class="icon icon-30 icon-toolico_13"/>
         <view>经纪人</view>
       </navigator>
-      <view class="flex-vc">
+      <navigator class="flex-vc" url="../calculate/index">
         <view class="icon icon-30 icon-toolico_15"/>
         <view>坐标云算</view>
-      </view>
+      </navigator>
     </view>
   </view>
   <view class="hr"/>

@@ -5,7 +5,8 @@
     "pages/index/houselist__1",
     "pages/index/search",
 
-
+    "pages/release/info",
+    "pages/release/price",
 
     "pages/agent/list",
     "pages/agent/show",
@@ -16,7 +17,7 @@
     "pages/appraisal/info",
     "pages/appraisal/show",
 
-
+    "pages/calculate/index",
 
 
     "pages/oldhouse/list",

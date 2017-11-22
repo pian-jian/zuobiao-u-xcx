@@ -65,8 +65,6 @@ Page({
         },
         valueObj:{},
         nvalue:"",
-        list:[1,2,1,1,2,1,2,1,2,2,2,2,2,2,1,2,2,2,12,2],
-        scrollHeight:200,
         housenumvalue:"",
         modalHide:true,
         thregionhide:"",
@@ -76,6 +74,9 @@ Page({
         thmorehide:"",
         tbhide:"",
         tbmorehide:true,
+        list:[1,2,1,1,2,1,2,1,2,2,2,2,2,2,1,2,2,2,12,2],
+        scrollHeight:200,
+
 
     },
     onLoad:function (opt) {

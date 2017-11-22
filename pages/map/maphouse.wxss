@@ -1,0 +1,9 @@
+.tabs .flex-cc{
+    color: #1273e1;
+    background-color: white;
+    border-left: 2rpx solid #1273e1;
+}
+.tabs .tabactive{
+    color: white;
+    background-color: #1273e1;
+}

@@ -1,0 +1,83 @@
+<view class="page">
+    <view class="banner flex-vc">
+        <view class="section flex-cc">
+            <image style="width:16rpx;height: 16rpx" src="http://m.zuobiao.wang/images/dot.png"/>
+            <image class="mleft14 mright14" style="width:25%;height: 2rpx" src="http://m.zuobiao.wang/images/line55.png"/>
+            <image style="width:16rpx;height: 16rpx" src="http://m.zuobiao.wang/images/dot55.png"/>
+            <image class="mleft14 mright14" style="width:25%;height: 2rpx" src="http://m.zuobiao.wang/images/line55.png"/>
+            <image style="width:16rpx;height: 16rpx" src="http://m.zuobiao.wang/images/dot55.png"/>
+        </view>
+        <view class="flex-lr mtop5" style="width: 90%">
+            <view class="flex-cc" style="width:33%">
+                基本信息
+            </view>
+            <view class="flex-cc f-liggray" style="width:33%">
+                出售价格
+            </view>
+            <view class="flex-cc f-liggray" style="width:33%">
+                完成
+            </view>
+        </view>
+    </view>
+    <view class="bg-grey f-midgray flex-cc fsize12" style="padding: 16rpx 0">
+        <view class="section">
+            请填写要委托房源的基本信息
+        </view>
+    </view>
+    <form bindsubmit="formSubmit">
+        <view class="section">
+            <view class="group-li flex-lr">
+                <view >
+                    小区所在城市
+                </view>
+                <view>
+                    <input type="text" name="city" placeholder="输入城市名称"/>
+                </view>
+            </view>
+            <view class="hr-one"/>
+            <view class="group-li flex-lr">
+                <view >
+                    小区名
+                </view>
+                <view>
+                    <input type="text" name="village" placeholder="输入小区名称"/>
+                </view>
+            </view>
+            <view class="hr-one"/>
+            <view class="group-li flex-lr">
+                <view >
+                    楼栋号
+                </view>
+                <view>
+                    <input type="text" name="buildingnum" placeholder="输入楼栋号"/>
+                </view>
+            </view>
+            <view class="hr-one"/>
+            <view class="group-li flex-lr">
+                <view >
+                    单元号
+                </view>
+                <view>
+                    <input type="text" name="unitnum" placeholder="输入单元号"/>
+                </view>
+            </view>
+            <view class="hr-one"/>
+            <view class="group-li flex-lr">
+                <view >
+                    门牌号
+                </view>
+                <view>
+                    <input type="text" name="housenum" placeholder="输入门牌号"/>
+                </view>
+            </view>
+            <view class="hr-one"/>
+        </view>
+        <view class="bg-grey group-li ptop14">
+            <view class="fsize12 f-midgray section">
+                输入准确的房源信息，可能会获得更精准的定价参考信息，以及推荐合适的经纪人。
+            </view>
+        </view>
+        <button class="bg_blue section flex-cc white mtop16" formType="submit">下一步</button>
+
+    </form>
+</view>

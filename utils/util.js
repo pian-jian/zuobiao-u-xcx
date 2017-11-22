@@ -102,6 +102,19 @@ module.exports = {
             icon: 'fail',
             duration: 2000
         })
+    },
+    //链接跳转
+    link:function(n,url){
+        if(n&&n=="n"){
+            wx.navigateTo({
+                url: url
+            })
+        }else{
+            wx.redirectTo({
+                url: url
+            })
+        }
+
     }
 
 }

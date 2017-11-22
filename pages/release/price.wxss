@@ -1,0 +1,8 @@
+.banner{
+    background-color: #1273e1;
+    height: 100rpx;
+    color: #fff;
+}
+input{
+    text-align: right;
+}

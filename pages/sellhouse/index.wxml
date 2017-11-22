@@ -18,16 +18,16 @@
     </view>
     <view class="section flex-vc optgroup bntBox">
         <view class="flex-lr mbottom30 section">
-            <view class="btnw45 bg_white fsize16 flex-cc">
+            <view class="btnw45 bg_white fsize16 flex-cc" bindtap="goAppraisal">
                 我要估价
             </view>
-            <view class="btnw45 bg_blue white flex-cc fsize16">
+            <view class="btnw45 bg_blue white flex-cc fsize16" bindtap="goRelease">
                 发布房源
             </view>
         </view>
-        <view class="btnw90 bg_black white flex-cc fsize16 white mbottom14">
+        <navigator class="btnw90 bg_black white flex-cc fsize16 white mbottom14" url="../oldhouse/list">
             <view class="icon icon-18 icon-viewmyhouse mright10"/>  查看我的在售房子
-        </view>
+        </navigator>
         <view class="section flex-lr fsize12 white">
             <view>
                 卖房有问题 联系客服

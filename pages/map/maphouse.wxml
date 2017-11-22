@@ -1,7 +1,23 @@
-<map id="myMap"
-     show-location="true"
-     style="width: 100%; height: 100%;"
-     longitude="{{locallng}}"
-     latitude="{{locallat}}"
-     markers="{{markers}}"
-/>
+<view class="page">
+    <view class="bg_blue group-li flex-cc white tabs">
+        <view class="flex-cc {{tabindex==0?'tabactive':''}}" style="width: 30%" data-tabindex="0" bindtap="tabTap">
+            二手房
+        </view>
+        <view class="flex-cc {{tabindex==1?'tabactive':''}}" style="width: 30%" data-tabindex="1" bindtap="tabTap">
+            租房
+        </view>
+        <view class="flex-cc {{tabindex==2?'tabactive':''}}" style="width: 30%" data-tabindex="2" bindtap="tabTap">
+            新房
+        </view>
+    </view>
+    <map id="myMap"
+         show-location="true"
+         style="width: 100%; height: 100%;"
+         scale="{{mapscale}}"
+         longitude="{{list[0].mapX}}"
+         latitude="{{list[0].mapY}}"
+         markers="{{markers}}"
+         bindcallouttap="tapCallout"
+         bindmarkertap="tapCallout"
+    />
+</view>

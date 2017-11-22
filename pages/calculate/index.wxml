@@ -1,0 +1,7 @@
+<view class="page">
+    <view class="flex-vc section">
+        <image style="margin: 80rpx 0" src="http://m.zuobiao.wang/images/errorPageIcon.png"/>
+        <view class="group-li mtop16">为了更好的为您服务，工程师正在努力云计算中</view>
+        <button class="bg_blue section flex-cc white btnw50" bindtap="goOldhouse">开启坐标云计算</button>
+    </view>
+</view>
