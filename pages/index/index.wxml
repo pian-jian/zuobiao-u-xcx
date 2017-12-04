@@ -4,7 +4,7 @@
   <view class="banner flex-vc">
     <view class="flex-vc banner-content">
       <view class="flex-lr">
-        <navigator url="../city/index" class="btn-location">
+        <navigator url="../city/index" class="btn-location" hover-class="none">
           {{nowcity}}
         </navigator>
         <navigator class="flex-vc" url="../mine/login">
@@ -13,7 +13,7 @@
         </navigator>
       </view>
       <view class="bfbzfy"></view>
-      <navigator class="search-bar flex-ll" url="search?from=index">
+      <navigator class="search-bar flex-ll" hover-class="none" url="search?from=index">
         <view class="icon icon-13 icon-search"/>
         <input type="text" disabled="true" placeholder="请输入城区，商圈或学区房名..." focus="{{focus}}" />
       </navigator>
@@ -21,36 +21,35 @@
 
   </view>
   <view class="flex-auto type-menu">
-    <navigator class="flex-vc bg_white" url="../oldhouse/list">
+    <navigator class="flex-vc bg_white" hover-class="none" url="../oldhouse/list">
       <view class="icon icon-54 icon-index-menu-1 bg_white"/>
       <view>二手房</view>
     </navigator>
-    <navigator class="flex-vc"  url="../newhouse/index">
+    <navigator class="flex-vc bg_white" hover-class="none" url="../newhouse/index">
       <view class="icon icon-54 icon-index-menu-2 bg_white"/>
       <view>新房</view>
     </navigator>
-    <navigator class="flex-vc" url="../rentedhouse/list">
+    <navigator class="flex-vc bg_white" hover-class="none" url="../rentedhouse/list">
       <view class="icon icon-54 icon-index-menu-3 bg_white"/>
       <view>租房</view>
     </navigator>
-    <navigator class="flex-vc" url="../sellhouse/index">
+    <navigator class="flex-vc bg_white" hover-class="none" url="../sellhouse/index">
       <view class="icon icon-54 icon-index-menu-4 bg_white"/>
       <view>卖房</view>
     </navigator>
-
-    <navigator  class="flex-vc" url="../map/maphouse">
+    <navigator  class="flex-vc bg_white" hover-class="none" url="../map/maphouse">
         <view class="icon icon-54 icon-index-menu-5 bg_white"/>
         <view>地图找房</view>
     </navigator>
-    <navigator class="flex-vc" url="../selledhouse/list">
+    <navigator class="flex-vc bg_white" hover-class="none" url="../selledhouse/list">
       <view class="icon icon-54 icon-index-menu-6 bg_white"/>
       <view>查成交</view>
     </navigator>
-    <navigator class="flex-vc" url="../schoolhouse/list">
+    <navigator class="flex-vc bg_white" hover-class="none" url="../schoolhouse/list">
       <view class="icon icon-54 icon-index-menu-7 bg_white"/>
       <view>学区房</view>
     </navigator>
-    <navigator class="flex-vc" url="../service/finance">
+    <navigator class="flex-vc bg_white" hover-class="none" url="../service/finance">
       <view class="icon icon-54 icon-jr_03 bg_white"/>
       <view>坐标金融</view>
     </navigator>
@@ -78,38 +77,38 @@
     </view>
     <view class="hr-one"/>
     <view class="flex-auto index-help-type">
-      <navigator class="flex-vc" url="../oldhouse/list">
+      <navigator class="flex-vc bg_white" hover-class="none" url="../oldhouse/list">
         <view class="icon icon-30 icon-toolico_03"/>
         <view>问答</view>
       </navigator>
-      <navigator class="flex-vc" url="../oldhouse/list">
+      <navigator class="flex-vc bg_white" hover-class="none" url="../oldhouse/list">
         <view class="icon icon-30 icon-toolico_05"/>
         <view>百科</view>
       </navigator>
-      <navigator class="flex-vc" url="../schoolhouse/list">
+      <navigator class="flex-vc bg_white" hover-class="none" url="../schoolhouse/list">
         <view class="icon icon-30 icon-toolico_07"/>
         <view>查学校</view>
       </navigator>
-      <navigator class="flex-vc" url="../selledhouse/list">
+      <navigator class="flex-vc bg_white" hover-class="none" url="../selledhouse/list">
         <view class="icon icon-30 icon-toolico_09"/>
         <view>房价</view>
       </navigator>
-      <navigator class="flex-vc" url="../appraisal/index">
+      <navigator class="flex-vc bg_white" hover-class="none" url="../appraisal/index">
         <view class="icon icon-30 icon-toolico_11"/>
         <view>估价</view>
       </navigator>
-      <navigator class="flex-vc" url="../agent/list">
+      <navigator class="flex-vc bg_white" hover-class="none" url="../agent/list">
         <view class="icon icon-30 icon-toolico_13"/>
         <view>经纪人</view>
       </navigator>
-      <navigator class="flex-vc" url="../calculate/index">
+      <navigator class="flex-vc bg_white" hover-class="none" url="../calculate/index">
         <view class="icon icon-30 icon-toolico_15"/>
         <view>坐标云算</view>
       </navigator>
     </view>
   </view>
   <view class="hr"/>
-  <view >
+  <view>
     <view class="group-title">
       热门房源
     </view>

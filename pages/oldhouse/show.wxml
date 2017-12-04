@@ -96,19 +96,14 @@
         </view>
     </view>
     <virew class="hr-one"/>
-    <map id="map"
+    <!--<map
          longitude="{{list[0].mapX}}"
          latitude="{{list[0].mapY}}"
          scale="14"
          markers="{{markers}}"
          bindmarkertap="tapMark"
-         ></map>
-    <view class="hr"/>
-    <view class="ll group-li section">
-        <view>小区信息：{{list[0].communityname}}房价走势</view>
-    </view>
-    <canvas class="section" canvas-id="price-chart">
-    </canvas>
+         ></map>-->
+    <image src="{{mapimg}}" style="height: 600rpx;width:100%"/>
     <view class="hr"/>
     <navigator class="flex-lr group-li section" url="../selledhouse/list?id=123">
         <view>小区成交历史</view>

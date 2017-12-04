@@ -76,13 +76,11 @@ Page({
         tbmorehide:true,
         list:[1,2,1,1,2,1,2,1,2,2,2,2,2,2,1,2,2,2,12,2],
         scrollHeight:200,
-
-
     },
     onLoad:function (opt) {
         var that=this;
         util.setBarTitle("二手房")
-        if(opt){
+        if(opt&&opt.length>0){
             console.log(opt);
             var n_multiObj=this.data.multiObj;
             for (var i in opt){
@@ -114,7 +112,7 @@ Page({
                 that.setData({
                     windowWidth:res.windowWidth,
                     windowHeight:res.windowHeight,
-                    scrollHeight:res.windowHeight-56
+                    scrollHeight:res.windowHeight-96
                 });
             }
         });

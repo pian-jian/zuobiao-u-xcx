@@ -26,13 +26,13 @@
 				{
 					"id": 0,
 					"name": "lll",
-					"pathName": "pages/appraisal/index",
+					"pathName": "pages/oldhouse/show",
 					"query": ""
 				},
 				{
 					"id": 1,
 					"name": "houselist",
-					"pathName": "pages/appraisal/show",
+					"pathName": "pages/oldhouse/list",
 					"query": "text=ww"
 				}
 			]

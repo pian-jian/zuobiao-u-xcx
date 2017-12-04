@@ -1,5 +1,6 @@
 var util = require('../../utils/util.js')
-var charts =  require('../../utils/wxcharts-min.js')
+var QQMapWX = require('../../utils/qqmap-wx-jssdk.js');
+var qqmapsdk;
 
 Page({
     data: {
@@ -125,34 +126,19 @@ Page({
             latitude:"29.306314",
             longitude:"120.07115",
         }],
-
+        mapimg:'',
     },
-    onLoad:function(){
-        var that=this;
+    onLoad:function() {
+        var that = this;
         util.setBarTitle(that.data.houselog[0].titleC);
-
-        var newChart= new charts({
-            canvasId: 'price-chart',
-            type: 'line',
-            categories: that.data.housetu.month,
-            series: [{
-                name: '价格走势',
-                data: that.data.housetu.data1,
-                format: function (val) {
-                    return val.toFixed(0) + '万';
-                }
-            }],
-            yAxis: {
-                title: '',
-                format: function (val) {
-                    return parseInt(val);
-                },
-                min: 0
-            },
-            width: 350,
-            height: 150
-        });
-        
+        this.setData({
+            mapimg: 'http://apis.map.qq.com/ws/staticmap/v2/?key=CPZBZ-2G7RP-MUVDX-LUBPY-ZZZ3V-RGF7J' +
+            '&size=500*400' +
+            '&center=' +this.data.list[0].mapY+','+this.data.list[0].mapX+'' +
+            '&markers=color:blue|label:A|' +this.data.list[0].mapY+','+this.data.list[0].mapX+'' +
+            '&labels=border:1|size:18|color:0xFFFFFF|bgcolor:0x1273e100|anchor:3|香山小区|' +this.data.list[0].mapY+','+this.data.list[0].mapX+'' +
+            '&zoom=14'
+        })
     },
     onShow:function () {
         

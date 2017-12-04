@@ -1,6 +1,5 @@
 {
   "pages":[
-
     "pages/index/index",
     "pages/index/houselist__1",
     "pages/index/search",
@@ -19,7 +18,6 @@
 
     "pages/calculate/index",
 
-
     "pages/oldhouse/list",
     "pages/oldhouse/show",
 
@@ -30,7 +28,6 @@
     "pages/newhouse/housetype",
 
     "pages/sellhouse/index",
-
 
     "pages/selledhouse/list",
     "pages/selledhouse/show",
@@ -45,7 +42,6 @@
     "pages/houseresource/agentcomment",
     "pages/houseresource/maparound",
     "pages/houseresource/villagedetail",
-
 
     "pages/houseresource/houserecord",
 
@@ -66,9 +62,9 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#1273e1",
     "navigationBarTitleText": "寻找你未来家的坐标",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"white"
   },
   "tabBar": {
     "color": "#575757",
@@ -80,8 +76,7 @@
       "iconPath": "imgs/nav_01.png",
       "selectedIconPath": "imgs/navcur_01.png",
       "text": "首页"
-    },
-      {
+    },{
         "pagePath": "pages/service/index",
         "iconPath": "imgs/nav_02.png",
         "selectedIconPath": "imgs/navcur_02.png",
