@@ -1,8 +1,9 @@
 <import src="../template/twlist-item.wxml"/>
-
+<import src="../template/search.wxml"/>
 <view class="page">
+<template is="search"/>
 <include src="../template/header-type.wxml"/>
-<scroll-view scroll-y style="height: {{scrollHeight}}px;">
+<scroll-view scroll-y style="height: {{scrollHeight}}px;margin-top: 108rpx">
     <block wx:for="{{list}}">
         <template is="xflist-item" data="{{list}}"/>
     </block>

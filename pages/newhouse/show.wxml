@@ -109,13 +109,14 @@
                 >
             </view>
         </view>
-        <map id="map"
+        <!--<map id="map"
              longitude="{{list[0].mapx}}"
              latitude="{{list[0].mapy}}"
              scale="14"
              markers="{{markers}}"
              bindmarkertap="tapMark"
-        ></map>
+        ></map>-->
+        <image src="{{mapimg}}" style="height: 600rpx;width:100%"/>
         <view class="flex-ll group-li">
             <view class="w-half flex-ll">
                 <view class="icon-around-spirit icon-around-study"/>

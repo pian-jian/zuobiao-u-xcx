@@ -71,5 +71,10 @@ Page({
             longitude:"120.077582",
         }],
     },
+    onLoad:function () {
+        this.setData({
+            mapimg:util.mapimg(this.data.list[0].mapy,this.data.list[0].mapx,this.data.list[0].titleC)
+        })
+    }
 
 })

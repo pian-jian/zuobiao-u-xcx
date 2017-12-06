@@ -75,7 +75,7 @@
   background-image: url(http://m.zuobiao.wang/images/icon-search.png);
 }
 .icon-anxinchengnuo-arrow{
-  background-image: url(http://m.jh.zuobiao.wang/fuwu/zhenfuwu/images/anxinchengnuo-arrow.png);
+  background-image: url(http://m.zuobiao.wang/fuwu/zhenfuwu/images/anxinchengnuo-arrow.png);
 }
 .icon-around-spirit{
   background-image: url(http://m.zuobiao.wang/images/around-spirit.png);

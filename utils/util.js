@@ -83,13 +83,6 @@ module.exports = {
         }
         return wx.getStorageSync(key);
     },
-    image:function(id,width=""){
-        var url=this.cgi(uri.CGI__DOWNLOAD+'/id/'+id);
-        if(width){
-            url+='/width/'+width;
-        }
-        return url;
-    },
     setBarTitle:function (t) {
         wx.setNavigationBarTitle({
             title: t
@@ -115,6 +108,14 @@ module.exports = {
             })
         }
 
+    },
+    //地图图片
+    mapimg:function(lng,lat,name){
+        return 'http://apis.map.qq.com/ws/staticmap/v2/?key=CPZBZ-2G7RP-MUVDX-LUBPY-ZZZ3V-RGF7J' +
+            '&size=500*400' +
+            '&center='+lng+','+lat+'' +
+            '&markers=color:blue|label:A|'+lng+','+lat+'' +
+            '&labels=border:1|size:18|color:0xFFFFFF|bgcolor:0x1273e100|anchor:3|'+name+'|'+lng+','+lat+'' +
+            '&zoom=14'
     }
-
 }

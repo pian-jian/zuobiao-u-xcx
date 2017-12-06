@@ -35,14 +35,10 @@
     <view>月供：3487.17元</view>
 </view>
 <view class="hr-one"/>
-
-
-<view class="hr-one"/>
 <view class="flex-ll group-li section">
     <view class="w-half">年代：{{list[0].communityAge}}</view>
     <view>编号：{{list[0].housecode}}</view>
 </view>
-
 <view class="hr-one"/>
 <navigator class="flex-lr group-li section" url="../houseresource/villagedetail">
     <view>小区：{{list[0].communityname}}</view>
@@ -73,13 +69,15 @@
     <view class="f-liggray">></view>
 </navigator>
 <virew class="hr-one"/>
-<map id="map"
+<!--<map id="map"
      longitude="{{list[0].mapX}}"
      latitude="{{list[0].mapY}}"
      scale="14"
      markers="{{markers}}"
      bindmarkertap="tapMark"
-></map>
+></map>-->
+<image src="{{mapimg}}" style="height: 600rpx;width:100%"/>
+
 <view class="hr"/>
 <navigator class="flex-lr group-li section">
     <view>小区成交历史</view>

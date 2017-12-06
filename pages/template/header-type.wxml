@@ -1,18 +1,18 @@
 <view class="flex-lr group-li tabs-title" style="width: 100%">
 <view class="picker-li flex-cc {{valueObj.region>0?'blue':''}}" style="width: 20%" bindtap="showTypeView" data-tab-type="region" hidden="{{thregionhide}}">
-    区域▼
+    区域
 </view>
 <view class="picker-li flex-cc {{valueObj.school>0?'blue':''}}" catchtap="showTypeView" data-tab-type="school" hidden="{{thschoolhide}}">
-    学校▼
+    学校
 </view>
 <view class="picker-li flex-cc {{valueObj.price>0?'blue':''}}" catchtap="showTypeView" data-tab-type="price" hidden="{{thpricehide}}">
-    价格▼
+    价格
 </view>
 <view class="picker-li flex-cc {{valueObj.spec>0?'blue':''}}" catchtap="showTypeView" data-tab-type="spec" hidden="{{thspechide}}">
-    房型▼
+    房型
 </view>
 <view class="picker-li flex-cc {{valueObj.order>0||valueObj.style>0||valueObj.area>0||valueObj.tags.length>1||valueObj.tags>0||valueObj.number.length>0?'blue':''}}" hidden="{{thmorehide}}" catchtap="showTypeView" data-tab-type="more">
-    更多▼
+    更多
 </view>
 </view>
 <view class="hr-one"/>

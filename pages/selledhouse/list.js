@@ -109,7 +109,7 @@ Page({
                 that.setData({
                     windowWidth:res.windowWidth,
                     windowHeight:res.windowHeight,
-                    scrollHeight:res.windowHeight-56
+                    scrollHeight:res.windowHeight-96
                 });
             }
         });

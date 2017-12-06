@@ -3,7 +3,7 @@
         <swiper-item>
             <view class="item-bg flex-vc" style="background-image:url({{item.bg}})">
                <block wx:if="{{index==0}}">
-                   <view class="item-image" style="background-image:url(http://m.jh.zuobiao.wang/fuwu/zhenfuwu/images/zfwtext1a.png)"/>
+                   <view class="item-image" style="background-image:url(http://m.zuobiao.wang/fuwu/zhenfuwu/images/zfwtext1a.png)"/>
                    <view class="icon icon-28 icon-anxinchengnuo-arrow"/>
                </block>
                 <view class="item-image" style="background-image:url({{item.img}})">

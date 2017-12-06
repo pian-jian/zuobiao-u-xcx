@@ -120,10 +120,11 @@ Page({
     onLoad:function(){
         var that=this;
         util.setBarTitle(that.data.houselog[0].titleC);
-
     },
     onShow:function () {
-
+        this.setData({
+            mapimg:util.mapimg(this.data.list[0].mapY,this.data.list[0].mapX,this.data.list[0].title)
+        })
     },
     tapMark:function(e){
         console.log(e);

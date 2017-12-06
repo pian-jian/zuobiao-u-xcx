@@ -132,16 +132,17 @@ Page({
         var that = this;
         util.setBarTitle(that.data.houselog[0].titleC);
         this.setData({
-            mapimg: 'http://apis.map.qq.com/ws/staticmap/v2/?key=CPZBZ-2G7RP-MUVDX-LUBPY-ZZZ3V-RGF7J' +
-            '&size=500*400' +
-            '&center=' +this.data.list[0].mapY+','+this.data.list[0].mapX+'' +
-            '&markers=color:blue|label:A|' +this.data.list[0].mapY+','+this.data.list[0].mapX+'' +
-            '&labels=border:1|size:18|color:0xFFFFFF|bgcolor:0x1273e100|anchor:3|香山小区|' +this.data.list[0].mapY+','+this.data.list[0].mapX+'' +
-            '&zoom=14'
+            /* mapimg: 'http://apis.map.qq.com/ws/staticmap/v2/?key=CPZBZ-2G7RP-MUVDX-LUBPY-ZZZ3V-RGF7J' +
+             '&size=500*400' +
+             '&center=' +this.data.list[0].mapY+','+this.data.list[0].mapX+'' +
+             '&markers=color:blue|label:A|' +this.data.list[0].mapY+','+this.data.list[0].mapX+'' +
+             '&labels=border:1|size:18|color:0xFFFFFF|bgcolor:0x1273e100|anchor:3|香山小区|' +this.data.list[0].mapY+','+this.data.list[0].mapX+'' +
+             '&zoom=14'*/
+            mapimg:util.mapimg(this.data.list[0].mapY,this.data.list[0].mapX,this.data.list[0].communityname)
         })
     },
     onShow:function () {
-        
+
     },
     tapMark:function(e){
         console.log(e);
